@@ -1,8 +1,42 @@
 
 /* THEME.CSS FILE */
 
+/* theme
+http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost.com%2Fgen%2F822111%2Fimages%2Fo-CITY-SKYLINES-facebook.jpg&commit=Go+Lavish
+*/
+
 $body-color: #D3DAE1;
 $primary-color: #333;
+$secondary-color: #9FB2C4;
+$third-color: #6E92B2;
+$fourth-color: #937055;
+$fifth-color: #4E6A8F;
+$sixth-color: #5A5D64;
+$seventh-color: #203144;
+$eigth-color: #455e7e;
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$gray-base:              #000 !default;
+$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:              #5A5D64;   // #333
+$gray:                   #937055; // #555
+$gray-light:             #6E92B2; // #777
+$gray-lighter:           #9FB2C4; // #eee
+
+$brand-primary:         #4E6A8F; // #337ab7
+$brand-success:         #5cb85c !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
+$btn-primary-color:              #fff !default;
+$btn-primary-bg:                 $brand-primary !default;
+$btn-primary-bg-hover:         #3c526e;
+$btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+$btn-primary-border-hover:     #2f4057;
 
 /* Body */
 
@@ -12,7 +46,7 @@ BODY {
 
 /* button */
 button {
-    color: #074376;
+    color: $btn-primary-color;
 }
 
 button  {
@@ -20,18 +54,19 @@ button  {
     line-height: 1.8em;
 }
 button:hover {
-    border: 1px solid #aaa;
-    background-color: #F2F2F2;
+    border: 1px solid $btn-primary-border-hover;
+    background-color: $btn-primary-bg-hover;
+    color: $btn-primary-color;
 }
 button  {
-    border: 1px solid #bbb;
+    border: 1px solid $btn-primary-border;
     padding: .3em 1em;
     margin: 0;
     display: inline-block;
     float: none;
     font-size: 1em;
     text-decoration: none;
-    background-color: #ebebeb;
+    background-color: $btn-primary-bg;
     border-radius: 3px;
     cursor: pointer;
 }
