@@ -129,7 +129,7 @@ h1#knack-logo {
 /* Body */
 
 BODY {
-  background-color: #D3DAE1;
+  background-color: #D3DAE1 !important;
 }
 
 /* button */
