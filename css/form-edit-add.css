@@ -1,0 +1,35 @@
+
+/* FORM-EDIT-ADD.CSS FILE */
+
+.cm-check-boxes label {
+    display: inline-block;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.cm-check-boxes input {
+    vertical-align: middle;
+}
+
+.cm-check-boxes label span {
+    vertical-align: middle;
+}
+
+.cm-check-boxes .cm-filter-highlight {
+    background-color: lightgray;
+}
+
+.cm-check-boxes label span {
+  vertical-align: middle;
+}
+
+input[type=text], textarea {
+    border: 2px solid #dadada;
+    border-radius: 7px;
+}
+
+input[type=text]:focus, textarea:focus { 
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}

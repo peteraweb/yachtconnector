@@ -1,0 +1,21 @@
+
+/* LOGIN.CSS FILE */
+
+.view_71,
+.kn-register.kn-form.kn-view {
+    padding-left: 130px !important;
+}
+
+
+.kn-list-nodata {
+    background-color: lightgray;
+    padding: 30px;
+    margin: 30px;
+    font-size: 1.1rem;
+}
+
+.item-link-listing {
+    display: relative;
+    float: left;
+    padding-right: 20px;
+}

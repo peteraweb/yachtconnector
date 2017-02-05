@@ -1,51 +1,158 @@
-/* Login page */
-.view_71,
-.kn-register.kn-form.kn-view {
-    padding-left: 130px !important;
+/* FORM-EDIT-ADD.CSS FILE */
+
+.cm-check-boxes label {
+  display: inline-block;
+  padding: 10px;
+  white-space: nowrap;
 }
 
+.cm-check-boxes input {
+  vertical-align: middle;
+}
+
+.cm-check-boxes label span {
+  vertical-align: middle;
+}
+
+.cm-check-boxes .cm-filter-highlight {
+  background-color: lightgray;
+}
+
+.cm-check-boxes label span {
+  vertical-align: middle;
+}
+
+input[type=text],
+textarea {
+  border: 2px solid #dadada;
+  border-radius: 7px;
+}
+
+input[type=text]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+}
+/* HOME.CSS FILE */
+
+.yc-home-view-links {
+  clear: both;
+  padding: 40px;
+  text-align: center;
+}
+
+.yc-home-add-links {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.kn-link.kn-link-1.yc-add-new-buyer,
+.kn-link.kn-link-2.yc-add-new-listing {
+  padding: 0 50px !important;
+}
+
+.kn-link.kn-link-1.yc-view-buyers,
+.kn-link.kn-link-2.yc-view-listings {
+  display: inline-block;
+  font-size: .9 rem;
+}
+
+.kn-link.kn-link-1.yc-view-buyers {
+  padding: 20px 50px;
+}
+
+.kn-link.kn-link-2.yc-view-listings {
+  padding: 20px 70px;
+}
+
+.yc-home-view-links a {
+  text-decoration: unset;
+}
+
+h1#knack-logo {
+  display: inline-block;
+}
+
+.kn-current_user {
+  display: inline-block;
+  float: right;
+  text-align: center;
+  padding: 20px 40px 0 0;
+}
+
+.knaccount_settings {
+  display: block;
+}
+
+.kn-view.kn-info.clearfix {
+  display: none;
+}
+
+#view_73 {
+  padding-top: 150px !important;
+}
+
+#knack-body .kn-view.kn-info {
+  margin: 0px !important;
+}
+
+#knack-body .kn-view {
+  padding: 20px 24px;
+}
+
+h1#knack-logo {
+  background-color: #ffffff;
+}
+/* LOGIN.CSS FILE */
+
+.view_71,
+.kn-register.kn-form.kn-view {
+  padding-left: 130px !important;
+}
 
 .kn-list-nodata {
-    background-color: lightgray;
-    padding: 30px;
-    margin: 30px;
-    font-size: 1.1rem;
+  background-color: lightgray;
+  padding: 30px;
+  margin: 30px;
+  font-size: 1.1rem;
 }
 
 .item-link-listing {
-    display: relative;
-    float: left;
-    padding-right: 20px;
+  display: relative;
+  float: left;
+  padding-right: 20px;
+}
+/* THEME.CSS FILE */
+
+button {
+  color: #074376;
 }
 
-
-/*
-.kn-details-group-column {
-  width: 50% !important;
-}
-*/
-
-
-/*
-.yc-card-even .kn-list-item {
-    border-right: 2px solid lightgray !important;
-    margin-top: 10px;
+button {
+  padding: .4em 1.2em;
+  line-height: 1.8em;
 }
 
-.yc-card-odd {}
-
-.kn-list-container {
-    border-top: 2px solid lightgray;
+button:hover {
+  border: 1px solid #aaa;
+  background-color: #F2F2F2;
 }
 
-.yc-card-even .kn-list-item,
-.yc-card-odd .kn-list-item {
-    padding: 20px 20px 0 20px;
+button {
+  border: 1px solid #bbb;
+  padding: .3em 1em;
+  margin: 0;
+  display: inline-block;
+  float: none;
+  font-size: 1em;
+  text-decoration: none;
+  background-color: #ebebeb;
+  border-radius: 3px;
+  cursor: pointer;
 }
-*/
-
-
-/* Listing View */
+/* VIEW-CARD.CSS FILE */
 
 .kn-rich_text.kn-view.view_68,
 .kn-rich_text.kn-view.view_69 {
@@ -53,75 +160,69 @@
 }
 
 .kn-label {
-    /*border-bottom: 4px solid #ffffff;*/
+  /*border-bottom: 4px solid #ffffff;*/
 }
 
 .kn-details-group.column-3 .kn-details-group-column {
-    float: left;
-    width: 33.3% !important;
+  float: left;
+  width: 33.3% !important;
 }
 
 .yc-list-header {
-    /*background-color: #ffffff;*/
+  /*background-color: #ffffff;*/
 }
 
 .kn-details table,
 .kn-list table,
 .kn-map-list table {
-    border-collapse: collapse;
-    border-spacing: 2px;
-    width: 100%;
+  border-collapse: collapse;
+  border-spacing: 2px;
+  width: 100%;
 }
 
 #view_64 .kn-label,
 #view_61 .kn-label,
 #view_60 .kn-label {
-    width: 150px;
+  width: 150px;
 }
 
 #view_64 .kn-details .kn-details-group,
 #view_61 .kn-details .kn-details-group,
 #view_60 .kn-details .kn-details-group,
 .kn-list .kn-details-group {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .yc-list-header .title>span {
-    overflow: visible;
-    position: absolute;
-    width: 300px;
+  overflow: visible;
+  position: absolute;
+  width: 300px;
 }
 
 .yc-list-header .title {
-    padding: 9px 0 0 20px !important;
+  padding: 9px 0 0 20px !important;
 }
 
 .kn-label-left .title,
 .kn-label-right .title {
-    height: 26px;
-    position: relative;
+  height: 26px;
+  position: relative;
 }
 
 #view_64 .kn-link-page>span,
 #view_61 .kn-link-page>span,
 #view_60 .kn-link-page>span {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
-/*kn-details.kn-view.view_35,
-.kn-details.kn-view.view_14 
-{
-    background-color: #d3d3d3;
-}
-*/
 .kn-details.kn-view.view_35,
 .kn-details.kn-view.view_14 {
-	border-top: 4px solid lightgray;
-	border-bottom: 2px solid lightgray;
+  border-top: 4px solid lightgray;
+  border-bottom: 2px solid lightgray;
 }
 
 .kn-details th {
-    background-color: transparent !important; 
+  background-color: transparent !important;
 }
 
 /*
@@ -131,44 +232,21 @@
 */
 
 th.kn-label {
-    text-align: right !important;
-    width: 180px !important;
+  text-align: right !important;
+  width: 180px !important;
 }
 
-.kn-details th, .kn-list th, .kn-map-list th {
-	background-color: #ffffff;
-
+.kn-details th,
+.kn-list th,
+.kn-map-list th {
+  background-color: #ffffff;
 }
 
 #view_64,
 #view_60,
 #view_58 {
-    display: none;
+  display: none;
 }
-
-.cm-check-boxes label {
-    display: inline-block;
-    padding: 10px;
-    white-space: nowrap;
-}
-
-.cm-check-boxes input {
-    vertical-align: middle;
-}
-
-.cm-check-boxes label span {
-    vertical-align: middle;
-}
-
-.cm-check-boxes .cm-filter-highlight {
-    background-color: lightgray;
-}
-
-.cm-check-boxes label span {
-  vertical-align: middle;
-}
-
-
 
 /*
 .cm-filter-section {
@@ -178,134 +256,145 @@ th.kn-label {
 */
 
 .cm-filter-title {
-    display: inline-block !important;
-    padding: 12px 0 6px 60px !important;
+  display: inline-block !important;
+  padding: 12px 0 6px 60px !important;
 }
 
 #knack-body .kn-view {
-    clear: left;
+  clear: left;
 }
 
 .kn-list-item {
-    border-bottom: 1px solid #eeeeee;
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-    clear: both;
-    margin: 20px;
-    padding: 0px;
+  border-bottom: 1px solid #eeeeee;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  clear: both;
+  margin: 20px;
+  padding: 0px;
 }
 
 .yc-card-title {
-    font-size: 1.4rem;
-    padding: 20px 0;
-    text-align: center;
+  font-size: 1.4rem;
+  padding: 20px 0;
+  text-align: center;
 }
 
 .yc-card-title.yc-buyer {
-    background-color: #d3d3d3;
+  background-color: #d3d3d3;
 }
 
 .yc-card-title.yc-listing {
-    background-color: #d3d3d3;
+  background-color: #d3d3d3;
 }
 
 .yc-card-title .fa {
-    padding: 0 20px 0 0;
+  padding: 0 20px 0 0;
 }
+
+.yc-card-listing-highlight-item {
+  width: 10%;
+}
+
+.yc-card-listing-highlight-label {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.yc-card-listing-highlight-item {
+  float: left;
+}
+
+.yc-card-listing-highlight-value {
+  padding: 0 10px 10px 10px;
+}
+
+.yc-card-note {
+  padding: 10px 20px;
+  background-color: lightblue;
+  display: inline-block;
+  width: -moz-available;
+}
+
+.kn-input-section_break {
+  padding-top: 10px;
+  margin-bottom: 6px;
+  min-height: 20px;
+}
+
+.kn-details-link .kn-value {
+  padding: 10px 0 !important;
+}
+
+.kn-table tbody td {
+  padding: 30px 9px;
+}
+
+.yc-sort-cards {
+  float: right;
+}
+
+.yc-sort-cards select {
+  background-color: #f0f0f0;
+  border: 1px solid #dddddd;
+  color: #666666;
+  height: 30px;
+  margin: 0 0 0 15px;
+  padding: 2px;
+  vertical-align: top;
+}
+
+.yc-sort-cards > span {
+  padding: 10px 0 0;
+}
+/* VIEW-TABLE.CSS FILE */
 
 /*.kn-details.kn-view.view_14,
 .kn-details.kn-view.view_35,*/
+
 .kn-table.kn-view.view_12,
 .kn-table.kn-view.view_33 {
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 .kn-table.kn-view.view_12,
 .kn-table.kn-view.view_33 {
-    padding-bottom: 60px !important;
+  padding-bottom: 60px !important;
 }
 
 .kn-rich_text.kn-view.view_49,
 .kn-rich_text.kn-view.view_54,
 .kn-menu.kn-view.view_42,
 .kn-menu.kn-view.view_32 {
-    background-color: #d3d3d3;
+  background-color: #d3d3d3;
 }
 
 .kn-view {
-    margin: 0;
-    padding: 2px 0;
+  margin: 0;
+  padding: 2px 0;
 }
 
 .kn-menu.kn-view.view_42,
 .kn-menu.kn-view.view_32 {
-    padding-top: 1px !important;
+  padding-top: 1px !important;
 }
 
 .kn-rich_text.kn-view.view_49,
 .kn-rich_text.kn-view.view_54 {
-    padding-bottom: 1px !important;
+  padding-bottom: 1px !important;
 }
-
-#knack-body .kn-view.kn-info {
-    margin: 0px !important;
-}
-
-#knack-body .kn-view {
-    padding: 20px 24px;
-}
-
-h1#knack-logo {
-  background-color: #ffffff;
-}
-
-/*
-#knack-logo,
-.kn-grid-list.kn-grid-3 {
-    display:none;
-}
-*/
-
-.kn-details-link .kn-value {
-    padding: 10px 0 !important;
-}
-
-.kn-table tbody td {
-    padding: 30px 9px;
-}
-
-.yc-sort-cards {
-    float: right;
-}
-
-.yc-sort-cards select {
-    background-color: #f0f0f0;
-    border: 1px solid #dddddd;
-    color: #666666;
-    height: 30px;
-    margin: 0 0 0 15px;
-    padding: 2px;
-    vertical-align: top;
-}
-
-.yc-sort-cards > span {
-  padding: 10px 0 0;
-}
-
-/* table */
 
 .yc-row-content td {
-    padding: 16px 10px;
+  padding: 16px 10px;
 }
 
 tr.yc-row-spacer {
-    display: block;
-    background-color: rgba(0, 0, 0, 0) !important;
-    min-height: 20px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0) !important;
+  min-height: 20px;
 }
 
 tr.yc-row-content {
-    background-color: #fbfbfb;
-    box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.5);
+  background-color: #fbfbfb;
+  box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.5);
 }
 
 .kn-table table {
@@ -313,142 +402,10 @@ tr.yc-row-content {
   border-collapse: collapse;
   width: 100%;
 }
-
-/* listing Details */
-.yc-card-listing-highlight-item {
-    width: 10%
-}
-
-.yc-card-listing-highlight-label {
-	padding: 10px;
-	font-weight: bold;
-}
-
-.yc-card-listing-highlight-item {
-	float: left;
-}
-
-.yc-card-listing-highlight-value {
-	padding: 0 10px 10px 10px;
-}
-
-.yc-card-note {
-	padding: 10px 20px;
-	background-color: lightblue;
-	display: inline-block;
-	width: -moz-available;
-}
-
-.kn-input-section_break {
-	padding-top: 10px;
-	margin-bottom: 6px;
-	min-height: 20px;
-}
-
-/* BUTTON */
-
-button {
-    color: #074376;
-}
-
-button  {
-    padding: .4em 1.2em;
-    line-height: 1.8em;
-}
-button:hover {
-    border: 1px solid #aaa;
-    background-color: #F2F2F2;
-}
-button  {
-    border: 1px solid #bbb;
-    padding: .3em 1em;
-    margin: 0;
-    display: inline-block;
-    float: none;
-    font-size: 1em;
-    text-decoration: none;
-    background-color: #ebebeb;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-/* form */
-
-input[type=text], textarea {
-    border: 2px solid #dadada;
-    border-radius: 7px;
-}
-
-input[type=text]:focus, textarea:focus { 
-    outline: none;
-    border-color: #9ecaed;
-    box-shadow: 0 0 10px #9ecaed;
-}
-
-/* Home Page */
-
-.yc-home-view-links {
-	clear: both;
-	padding: 40px;
-    text-align: center;
-}
-
-.yc-home-add-links {
-	text-align: center;
-	margin: 0 auto;
-	max-width: 600px;
-}
-
-.kn-link.kn-link-1.yc-add-new-buyer,
-.kn-link.kn-link-2.yc-add-new-listing
-{
-	padding: 0 50px !important;
-}
-
-.kn-link.kn-link-1.yc-view-buyers,
-.kn-link.kn-link-2.yc-view-listings
-{
-	display: inline-block;
-    font-size: .9 rem;
-}
-
-.kn-link.kn-link-1.yc-view-buyers {
-	padding: 20px 50px;
-}
-
-.kn-link.kn-link-2.yc-view-listings {
-	padding: 20px 70px;
-}
-
-.yc-home-view-links a {
-	text-decoration: unset;
-}
-
-h1#knack-logo {
-	display: inline-block;
-}
-
-.kn-current_user {
-	display: inline-block;
-	float: right;
-	text-align: center;
-	padding: 20px 40px 0 0;
-}
-.knaccount_settings {
-	display: block;
-}
-
-.kn-view.kn-info.clearfix {
-    display: none;
-}
-
-#view_73 {
-	padding-top: 150px !important;
-}
-
-
+/* Z-END.CSS FILE */
 
 /* Last */
+
 #knack-body {
   display: unset;
 }

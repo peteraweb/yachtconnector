@@ -1,0 +1,73 @@
+
+/* HOME.CSS FILE */
+
+.yc-home-view-links {
+	clear: both;
+	padding: 40px;
+    text-align: center;
+}
+
+.yc-home-add-links {
+	text-align: center;
+	margin: 0 auto;
+	max-width: 600px;
+}
+
+.kn-link.kn-link-1.yc-add-new-buyer,
+.kn-link.kn-link-2.yc-add-new-listing
+{
+	padding: 0 50px !important;
+}
+
+.kn-link.kn-link-1.yc-view-buyers,
+.kn-link.kn-link-2.yc-view-listings
+{
+	display: inline-block;
+    font-size: .9 rem;
+}
+
+.kn-link.kn-link-1.yc-view-buyers {
+	padding: 20px 50px;
+}
+
+.kn-link.kn-link-2.yc-view-listings {
+	padding: 20px 70px;
+}
+
+.yc-home-view-links a {
+	text-decoration: unset;
+}
+
+h1#knack-logo {
+	display: inline-block;
+}
+
+.kn-current_user {
+	display: inline-block;
+	float: right;
+	text-align: center;
+	padding: 20px 40px 0 0;
+}
+.knaccount_settings {
+	display: block;
+}
+
+.kn-view.kn-info.clearfix {
+    display: none;
+}
+
+#view_73 {
+	padding-top: 150px !important;
+}
+
+#knack-body .kn-view.kn-info {
+    margin: 0px !important;
+}
+
+#knack-body .kn-view {
+    padding: 20px 24px;
+}
+
+h1#knack-logo {
+  background-color: #ffffff;
+}

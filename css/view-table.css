@@ -1,0 +1,57 @@
+
+/* VIEW-TABLE.CSS FILE */
+
+/*.kn-details.kn-view.view_14,
+.kn-details.kn-view.view_35,*/
+.kn-table.kn-view.view_12,
+.kn-table.kn-view.view_33 {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.kn-table.kn-view.view_12,
+.kn-table.kn-view.view_33 {
+    padding-bottom: 60px !important;
+}
+
+.kn-rich_text.kn-view.view_49,
+.kn-rich_text.kn-view.view_54,
+.kn-menu.kn-view.view_42,
+.kn-menu.kn-view.view_32 {
+    background-color: #d3d3d3;
+}
+
+.kn-view {
+    margin: 0;
+    padding: 2px 0;
+}
+
+.kn-menu.kn-view.view_42,
+.kn-menu.kn-view.view_32 {
+    padding-top: 1px !important;
+}
+
+.kn-rich_text.kn-view.view_49,
+.kn-rich_text.kn-view.view_54 {
+    padding-bottom: 1px !important;
+}
+
+.yc-row-content td {
+    padding: 16px 10px;
+}
+
+tr.yc-row-spacer {
+    display: block;
+    background-color: rgba(0, 0, 0, 0) !important;
+    min-height: 20px;
+}
+
+tr.yc-row-content {
+    background-color: #fbfbfb;
+    box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.5);
+}
+
+.kn-table table {
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-collapse: collapse;
+  width: 100%;
+}

@@ -1,0 +1,30 @@
+
+/* THEME.CSS FILE */
+
+
+
+
+button {
+    color: #074376;
+}
+
+button  {
+    padding: .4em 1.2em;
+    line-height: 1.8em;
+}
+button:hover {
+    border: 1px solid #aaa;
+    background-color: #F2F2F2;
+}
+button  {
+    border: 1px solid #bbb;
+    padding: .3em 1em;
+    margin: 0;
+    display: inline-block;
+    float: none;
+    font-size: 1em;
+    text-decoration: none;
+    background-color: #ebebeb;
+    border-radius: 3px;
+    cursor: pointer;
+}
