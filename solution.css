@@ -126,6 +126,14 @@ h1#knack-logo {
 }
 /* THEME.CSS FILE */
 
+/* Body */
+
+BODY {
+  background-color: #D3DAE1;
+}
+
+/* button */
+
 button {
   color: #074376;
 }

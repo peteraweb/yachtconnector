@@ -1,9 +1,16 @@
 
 /* THEME.CSS FILE */
 
+$body-color: #D3DAE1;
+$primary-color: #333;
 
+/* Body */
 
+BODY {
+    background-color: $body-color;
+}
 
+/* button */
 button {
     color: #074376;
 }
