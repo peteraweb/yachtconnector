@@ -193,7 +193,7 @@ button {
   overflow: hidden;
 }
 
-.yc-list-header .title>span {
+.yc-list-header .title > span {
   overflow: visible;
   position: absolute;
   width: 300px;
@@ -209,9 +209,9 @@ button {
   position: relative;
 }
 
-#view_64 .kn-link-page>span,
-#view_61 .kn-link-page>span,
-#view_60 .kn-link-page>span {
+#view_64 .kn-link-page > span,
+#view_61 .kn-link-page > span,
+#view_60 .kn-link-page > span {
   white-space: nowrap;
 }
 
@@ -388,7 +388,7 @@ th.kn-label {
 
 tr.yc-row-spacer {
   display: block;
-  background-color: rgba(0, 0, 0, 0) !important;
+  background-color: transparent !important;
   min-height: 20px;
 }
 
@@ -398,7 +398,7 @@ tr.yc-row-content {
 }
 
 .kn-table table {
-  border: 1px solid rgba(0, 0, 0, 0);
+  border: 1px solid transparent;
   border-collapse: collapse;
   width: 100%;
 }
