@@ -1,0 +1,64 @@
+
+/* THEME.CSS FILE */
+@import "_variables";
+
+/* Body */
+
+BODY {
+    background-color: $body-color !important;
+}
+
+/* button */
+button {
+    color: $btn-primary-color;
+}
+
+button  {
+    padding: .4em 1.2em;
+    line-height: 1.8em;
+}
+button:hover {
+    border: 1px solid $btn-primary-border-hover !important;
+    background-color: $btn-primary-bg-hover  !important;
+    color: $btn-primary-color  !important;
+}
+button  {
+    border: 1px solid $btn-primary-border  !important;
+    padding: .3em 1em;
+    margin: 0;
+    display: inline-block;
+    float: none;
+    font-size: 1em;
+    text-decoration: none;
+    background-color: $btn-primary-bg  !important;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.kn-content .kn-button-menu a {
+	color: $btn-primary-color  !important;
+}
+
+.kn-button-menu a:visited, .kn-content .kn-button-menu a:link, a.kn-button {
+	border: 1px solid $btn-primary-border  !important;
+	background-color: $btn-primary-bg  !important;
+    color: $btn-primary-color  !important;
+}
+
+.kn-button-menu a:hover, .kn-content .kn-button-menu a:hover, a.kn-button:hover:not(.save) {
+	border: 1px solid $btn-primary-border-hover !important;
+    background-color: $btn-primary-bg-hover  !important;
+    color: $btn-primary-color  !important;
+}
+
+.kn-view input[type="submit"]:hover {
+	border: 1px solid $btn-primary-border-hover !important;
+    background-color: $btn-primary-bg-hover  !important;
+    color: $btn-primary-color  !important;
+}
+
+.kn-view input[type="submit"] {
+	border: 1px solid $btn-primary-border  !important;
+	background-color: $btn-primary-bg  !important;
+    color: $btn-primary-color  !important;
+}

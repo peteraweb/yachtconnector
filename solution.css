@@ -1,4 +1,90 @@
+/* A-TOP.SCSS */
+
+/* theme
+http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost.com%2Fgen%2F822111%2Fimages%2Fo-CITY-SKYLINES-facebook.jpg&commit=Go+Lavish
+*/
+
+#knack-body {
+  display: none;
+}
+/* THEME.CSS FILE */
+
+/* theme
+http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost.com%2Fgen%2F822111%2Fimages%2Fo-CITY-SKYLINES-facebook.jpg&commit=Go+Lavish
+*/
+
+/* Body */
+
+BODY {
+  background-color: #D3DAE1 !important;
+}
+
+/* button */
+
+button {
+  color: #fff;
+}
+
+button {
+  padding: .4em 1.2em;
+  line-height: 1.8em;
+}
+
+button:hover {
+  border: 1px solid #2f4057 !important;
+  background-color: #3c526e !important;
+  color: #fff !important;
+}
+
+button {
+  border: 1px solid #455e7f !important;
+  padding: .3em 1em;
+  margin: 0;
+  display: inline-block;
+  float: none;
+  font-size: 1em;
+  text-decoration: none;
+  background-color: #4E6A8F !important;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.kn-content .kn-button-menu a {
+  color: #fff !important;
+}
+
+.kn-button-menu a:visited,
+.kn-content .kn-button-menu a:link,
+a.kn-button {
+  border: 1px solid #455e7f !important;
+  background-color: #4E6A8F !important;
+  color: #fff !important;
+}
+
+.kn-button-menu a:hover,
+.kn-content .kn-button-menu a:hover,
+a.kn-button:hover:not(.save) {
+  border: 1px solid #2f4057 !important;
+  background-color: #3c526e !important;
+  color: #fff !important;
+}
+
+.kn-view input[type="submit"]:hover {
+  border: 1px solid #2f4057 !important;
+  background-color: #3c526e !important;
+  color: #fff !important;
+}
+
+.kn-view input[type="submit"] {
+  border: 1px solid #455e7f !important;
+  background-color: #4E6A8F !important;
+  color: #fff !important;
+}
 /* FORM-EDIT-ADD.CSS FILE */
+
+/* theme
+http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost.com%2Fgen%2F822111%2Fimages%2Fo-CITY-SKYLINES-facebook.jpg&commit=Go+Lavish
+*/
 
 .cm-check-boxes label {
   display: inline-block;
@@ -31,10 +117,14 @@ textarea {
 input[type=text]:focus,
 textarea:focus {
   outline: none;
-  border-color: #9ecaed;
-  box-shadow: 0 0 10px #9ecaed;
+  border-color: #66afe9;
+  box-shadow: 0 0 10px #66afe9;
 }
 /* HOME.CSS FILE */
+
+/* theme
+http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost.com%2Fgen%2F822111%2Fimages%2Fo-CITY-SKYLINES-facebook.jpg&commit=Go+Lavish
+*/
 
 .yc-home-view-links {
   clear: both;
@@ -107,6 +197,10 @@ h1#knack-logo {
 }
 /* LOGIN.CSS FILE */
 
+/* theme
+http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost.com%2Fgen%2F822111%2Fimages%2Fo-CITY-SKYLINES-facebook.jpg&commit=Go+Lavish
+*/
+
 .view_71,
 .kn-register.kn-form.kn-view {
   padding-left: 130px !important;
@@ -124,48 +218,35 @@ h1#knack-logo {
   float: left;
   padding-right: 20px;
 }
-/* THEME.CSS FILE */
+/* TOP_NAV.CSS FILE */
 
 /* theme
 http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost.com%2Fgen%2F822111%2Fimages%2Fo-CITY-SKYLINES-facebook.jpg&commit=Go+Lavish
 */
 
-/* Body */
-
-BODY {
-  background-color: #D3DAE1 !important;
+#kn-app-menu ul {
+  background-color: #203144 !important;
+  border-color: #15212d !important;
 }
 
-/* button */
-
-button {
-  color: #fff;
+.kn-content #kn-app-menu a {
+  color: #fff !important;
 }
 
-button {
-  padding: .4em 1.2em;
-  line-height: 1.8em;
+#kn-app-menu {
+  width: 296px;
+  display: block;
 }
 
-button:hover {
-  border: 1px solid #2f4057;
-  background-color: #3c526e;
-  color: #fff;
-}
-
-button {
-  border: 1px solid #455e7f;
-  padding: .3em 1em;
-  margin: 0;
-  display: inline-block;
-  float: none;
-  font-size: 1em;
-  text-decoration: none;
-  background-color: #4E6A8F;
-  border-radius: 3px;
-  cursor: pointer;
+.kn-content #kn-app-menu .active a,
+.kn-content #kn-app-menu a:hover {
+  background-color: #101821 !important;
 }
 /* VIEW-CARD.CSS FILE */
+
+/* theme
+http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost.com%2Fgen%2F822111%2Fimages%2Fo-CITY-SKYLINES-facebook.jpg&commit=Go+Lavish
+*/
 
 .kn-rich_text.kn-view.view_68,
 .kn-rich_text.kn-view.view_69 {
@@ -360,6 +441,10 @@ th.kn-label {
 }
 /* VIEW-TABLE.CSS FILE */
 
+/* theme
+http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost.com%2Fgen%2F822111%2Fimages%2Fo-CITY-SKYLINES-facebook.jpg&commit=Go+Lavish
+*/
+
 /*.kn-details.kn-view.view_14,
 .kn-details.kn-view.view_35,*/
 
@@ -373,12 +458,14 @@ th.kn-label {
   padding-bottom: 60px !important;
 }
 
+/*
 .kn-rich_text.kn-view.view_49,
 .kn-rich_text.kn-view.view_54,
 .kn-menu.kn-view.view_42,
 .kn-menu.kn-view.view_32 {
-  background-color: #d3d3d3;
+    background-color: #d3d3d3;
 }
+*/
 
 .kn-view {
   margin: 0;
@@ -415,7 +502,24 @@ tr.yc-row-content {
   border-collapse: collapse;
   width: 100%;
 }
+
+#view_49 h1,
+#view_54 h1 {
+  display: inline-block;
+  padding: 0 0 20px 0;
+}
+
+.yc-add-new-buyer-button,
+.yc-add-new-listing-button {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+}
 /* Z-END.CSS FILE */
+
+/* theme
+http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost.com%2Fgen%2F822111%2Fimages%2Fo-CITY-SKYLINES-facebook.jpg&commit=Go+Lavish
+*/
 
 /* Last */
 

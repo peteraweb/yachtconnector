@@ -1,5 +1,6 @@
 
 /* VIEW-TABLE.CSS FILE */
+@import "_variables";
 
 /*.kn-details.kn-view.view_14,
 .kn-details.kn-view.view_35,*/
@@ -12,13 +13,14 @@
 .kn-table.kn-view.view_33 {
     padding-bottom: 60px !important;
 }
-
+/*
 .kn-rich_text.kn-view.view_49,
 .kn-rich_text.kn-view.view_54,
 .kn-menu.kn-view.view_42,
 .kn-menu.kn-view.view_32 {
     background-color: #d3d3d3;
 }
+*/
 
 .kn-view {
     margin: 0;
@@ -54,4 +56,19 @@ tr.yc-row-content {
   border: 1px solid rgba(0, 0, 0, 0);
   border-collapse: collapse;
   width: 100%;
+}
+
+#view_49 h1,
+#view_54 h1
+{
+	display: inline-block;
+	padding: 0 0 20px 0;
+}
+
+.yc-add-new-buyer-button,
+.yc-add-new-listing-button
+{
+	display: inline-block;
+	position: relative;
+	top: 10px;
 }

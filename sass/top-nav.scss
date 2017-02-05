@@ -1,0 +1,20 @@
+/* TOP_NAV.CSS FILE */
+@import "_variables";
+
+#kn-app-menu ul {
+	background-color: $navbar-default-bg !important;
+	border-color: $navbar-default-border !important;
+}
+
+.kn-content #kn-app-menu a {
+	color: $navbar-default-color !important;
+}
+
+#kn-app-menu {
+	width: 296px;
+	display: block;
+}
+
+.kn-content #kn-app-menu .active a, .kn-content #kn-app-menu a:hover {
+	background-color: $navbar-default-toggle-selected-bg !important;
+}

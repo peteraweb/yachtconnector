@@ -1,5 +1,6 @@
 
 /* FORM-EDIT-ADD.CSS FILE */
+@import "_variables";
 
 .cm-check-boxes label {
     display: inline-block;
@@ -30,6 +31,6 @@ input[type=text], textarea {
 
 input[type=text]:focus, textarea:focus { 
     outline: none;
-    border-color: #9ecaed;
-    box-shadow: 0 0 10px #9ecaed;
+    border-color: $input-border-focus;
+    box-shadow: 0 0 10px $input-border-focus;
 }
