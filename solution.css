@@ -1,3 +1,7 @@
+#knack-body {
+  display: unset;
+}
+
 /* Login page */
 .view_71,
 .kn-register.kn-form.kn-view {
