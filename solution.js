@@ -136,7 +136,7 @@ $(document).on('knack-view-render.view_55', function (event, page) {
     });
 
 });
-$(document).on('knack-view-render.view_43', function (event, page) {
+$(document).on('knack-view-render.view_78', function (event, page) {
     checkboxFieldSelectionLimit({
         itemField: 'field_43',
         itemLimit: '3'
