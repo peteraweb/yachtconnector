@@ -39,7 +39,7 @@ $(document).on('knack-scene-render.any', function (event, page) {
         $('#kn-app-menu').hide();
     }
 
-    console.log('new');
+    console.log('new test');
 
 });
 
