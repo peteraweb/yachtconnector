@@ -4,6 +4,8 @@
 http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost.com%2Fgen%2F822111%2Fimages%2Fo-CITY-SKYLINES-facebook.jpg&commit=Go+Lavish
 */
 
+/* Primary Colors */
+
 #knack-body {
   display: none;
 }
@@ -12,6 +14,8 @@ http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost
 /* theme
 http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost.com%2Fgen%2F822111%2Fimages%2Fo-CITY-SKYLINES-facebook.jpg&commit=Go+Lavish
 */
+
+/* Primary Colors */
 
 /* Body */
 
@@ -86,6 +90,8 @@ a.kn-button:hover:not(.save) {
 http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost.com%2Fgen%2F822111%2Fimages%2Fo-CITY-SKYLINES-facebook.jpg&commit=Go+Lavish
 */
 
+/* Primary Colors */
+
 .cm-check-boxes label {
   display: inline-block;
   padding: 10px;
@@ -125,6 +131,8 @@ textarea:focus {
 /* theme
 http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost.com%2Fgen%2F822111%2Fimages%2Fo-CITY-SKYLINES-facebook.jpg&commit=Go+Lavish
 */
+
+/* Primary Colors */
 
 .yc-home-view-links {
   clear: both;
@@ -201,6 +209,8 @@ h1#knack-logo {
 http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost.com%2Fgen%2F822111%2Fimages%2Fo-CITY-SKYLINES-facebook.jpg&commit=Go+Lavish
 */
 
+/* Primary Colors */
+
 .view_71,
 .kn-register.kn-form.kn-view {
   padding-left: 130px !important;
@@ -223,6 +233,8 @@ http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost
 /* theme
 http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost.com%2Fgen%2F822111%2Fimages%2Fo-CITY-SKYLINES-facebook.jpg&commit=Go+Lavish
 */
+
+/* Primary Colors */
 
 #kn-app-menu ul {
   background-color: #203144 !important;
@@ -247,6 +259,8 @@ http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost
 /* theme
 http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost.com%2Fgen%2F822111%2Fimages%2Fo-CITY-SKYLINES-facebook.jpg&commit=Go+Lavish
 */
+
+/* Primary Colors */
 
 .kn-rich_text.kn-view.view_68,
 .kn-rich_text.kn-view.view_69 {
@@ -333,7 +347,7 @@ th.kn-label {
 .kn-details th,
 .kn-list th,
 .kn-map-list th {
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
 #view_64,
@@ -374,12 +388,9 @@ th.kn-label {
   text-align: center;
 }
 
-.yc-card-title.yc-buyer {
-  background-color: #d3d3d3;
-}
-
+.yc-card-title.yc-buyer,
 .yc-card-title.yc-listing {
-  background-color: #d3d3d3;
+  background-color: #4E6A8F;
 }
 
 .yc-card-title .fa {
@@ -405,7 +416,7 @@ th.kn-label {
 
 .yc-card-note {
   padding: 10px 20px;
-  background-color: lightblue;
+  background-color: #fcf8e3;
   display: inline-block;
   width: -moz-available;
 }
@@ -446,6 +457,8 @@ th.kn-label {
 /* theme
 http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost.com%2Fgen%2F822111%2Fimages%2Fo-CITY-SKYLINES-facebook.jpg&commit=Go+Lavish
 */
+
+/* Primary Colors */
 
 /*.kn-details.kn-view.view_14,
 .kn-details.kn-view.view_35,*/
@@ -522,6 +535,8 @@ tr.yc-row-content {
 /* theme
 http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost.com%2Fgen%2F822111%2Fimages%2Fo-CITY-SKYLINES-facebook.jpg&commit=Go+Lavish
 */
+
+/* Primary Colors */
 
 /* Last */
 

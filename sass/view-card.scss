@@ -65,12 +65,12 @@
 
 .kn-details.kn-view.view_35,
 .kn-details.kn-view.view_14 {
-	border-top: 4px solid lightgray;
-	border-bottom: 2px solid lightgray;
+	border-top: 4px solid $card-top-border;
+	border-bottom: 2px solid $card-top-border;
 }
 
 .kn-details th {
-    background-color: transparent !important; 
+    background-color: $card-th !important; 
 }
 
 /*
@@ -85,7 +85,7 @@ th.kn-label {
 }
 
 .kn-details th, .kn-list th, .kn-map-list th {
-	background-color: #ffffff;
+	background-color: $card-th;
 
 }
 
@@ -114,7 +114,7 @@ th.kn-label {
 }
 
 .kn-list-item {
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid $card-border;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
     clear: both;
     margin: 20px;
@@ -127,13 +127,12 @@ th.kn-label {
     text-align: center;
 }
 
-.yc-card-title.yc-buyer {
-    background-color: #d3d3d3;
+.yc-card-title.yc-buyer,
+.yc-card-title.yc-listing
+{
+    background-color: $card-title-bar;
 }
 
-.yc-card-title.yc-listing {
-    background-color: #d3d3d3;
-}
 
 .yc-card-title .fa {
     padding: 0 20px 0 0;
@@ -158,7 +157,7 @@ th.kn-label {
 
 .yc-card-note {
 	padding: 10px 20px;
-	background-color: lightblue;
+	background-color: $card-note-section;
 	display: inline-block;
 	width: -moz-available;
 }
@@ -182,9 +181,9 @@ th.kn-label {
 }
 
 .yc-sort-cards select {
-    background-color: #f0f0f0;
-    border: 1px solid #dddddd;
-    color: #666666;
+    background-color: $card-sort-select-bg;
+    border: 1px solid $card-sort-select-border;
+    color: $card-sort-select-color;
     height: 30px;
     margin: 0 0 0 15px;
     padding: 2px;

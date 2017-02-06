@@ -3,6 +3,8 @@
 http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost.com%2Fgen%2F822111%2Fimages%2Fo-CITY-SKYLINES-facebook.jpg&commit=Go+Lavish
 */
 
+/* Primary Colors */
+
 $body-color: #D3DAE1;
 $primary-color: #333;
 $secondary-color: #9FB2C4;
@@ -49,3 +51,15 @@ $navbar-default-toggle-hover-bg:           #ddd !default;
 $navbar-default-toggle-icon-bar-bg:        #888 !default;
 $navbar-default-toggle-border-color:       #ddd !default;
 $navbar-default-toggle-selected-bg:       #101821 !default;
+
+// Card View
+$card-title-bar:                $fifth-color;
+$card-note-section:             #fcf8e3;
+$card-sort-select-bg:           #f0f0f0;
+$card-sort-select-border:       #dddddd;
+$card-sort-select-color:        #666666;
+$card-border:                   #eeeeee;
+$card-th:                       transparent;
+
+// top Card
+$card-top-border:               lightgray;
