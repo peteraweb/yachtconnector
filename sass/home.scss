@@ -43,6 +43,12 @@ h1#knack-logo {
 	display: inline-block;
 }
 
+h1#knack-logo.logo-img {
+	padding: 10px 24px !important;
+	line-height: 100%;
+	margin: 0;
+}
+
 .kn-current_user {
 	display: inline-block;
 	float: right;
