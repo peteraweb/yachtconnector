@@ -119,12 +119,14 @@ th.kn-label {
     clear: both;
     margin: 20px;
     padding: 0px;
+    background-color: $card-bg;
 }
 
 .yc-card-title {
     font-size: 1.4rem;
     padding: 20px 0;
     text-align: center;
+    color: $card-title-text;
 }
 
 .yc-card-title.yc-buyer,
