@@ -65,7 +65,7 @@ $(document).on('knack-view-render.view_12', function (event, page) {
 });
 
 // Buyers Add Buyer Page: /yachtbroker#buyers/add-buyer/
-$(document).on('knack-page-render.scene_26', function (event, page) {
+$(document).on('knack-page-render.scene_37', function (event, page) {
 
     console.log('scene 26 loaded');
     formFocusFieldLoad({
@@ -172,7 +172,7 @@ $(document).on('knack-view-render.view_33', function (event, page) {
 });
 
 // Listings Add Listing Page: /yachtbroker#listings/add-listing/
-$(document).on('knack-page-render.scene_20', function (event, page) {
+$(document).on('knack-page-render.scene_38', function (event, page) {
 
     console.log('scene 20 loaded');
     formFocusFieldLoad({
