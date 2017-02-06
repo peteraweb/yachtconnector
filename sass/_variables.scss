@@ -5,64 +5,68 @@ http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost
 
 /* Primary Colors */
 
-$body-color:        #D3DAE1;
-$primary-color:     #333;
-$secondary-color:   #9FB2C4;
-$third-color:       #6E92B2;
-$fourth-color:      #937055;
-$fifth-color:       #4E6A8F;
-$sixth-color:       #5A5D64;
-$seventh-color:     #203144;
-$eigth-color:       #455e7e;
-$white:             #ffffff;
+$body-color:                                #D3DAE1;
+$primary-color:                             #333;
+$secondary-color:                           #9FB2C4;
+$third-color:                               #6E92B2;
+$fourth-color:                              #937055;
+$fifth-color:                               #4E6A8F;
+$sixth-color:                               #5A5D64;
+$seventh-color:                             #203144;
+$eigth-color:                               #455e7e;
+$white:                                     #ffffff;
 
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$gray-base:              #000 !default;
-$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
-$gray-dark:              #5A5D64;   // #333
-$gray:                   #937055; // #555
-$gray-light:             #6E92B2; // #777
-$gray-lighter:           #9FB2C4; // #eee
+$gray-base:                                 #000 !default;
+$gray-darker:                               lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:                                 #5A5D64;   // #333
+$gray:                                      #937055; // #555
+$gray-light:                                #6E92B2; // #777
+$gray-lighter:                              #9FB2C4; // #eee
 
-$brand-primary:         #4E6A8F; // #337ab7
-$brand-success:         #5cb85c !default;
-$brand-info:            #5bc0de !default;
-$brand-warning:         #f0ad4e !default;
-$brand-danger:          #d9534f !default;
+$brand-primary:                             #4E6A8F; // #337ab7
+$brand-success:                             #5cb85c !default;
+$brand-info:                                #5bc0de !default;
+$brand-warning:                             #f0ad4e !default;
+$brand-danger:                              #d9534f !default;
 
-$btn-primary-color:              $white !default;
-$btn-primary-bg:                 $brand-primary !default;
-$btn-primary-bg-hover:         #3c526e;
-$btn-primary-border:             darken($btn-primary-bg, 5%) !default;
-$btn-primary-border-hover:     #2f4057;
+$btn-primary-color:                         $white !default;
+$btn-primary-bg:                            $brand-primary !default;
+$btn-primary-bg-hover:                      #3c526e;
+$btn-primary-border:                        darken($btn-primary-bg, 5%) !default;
+$btn-primary-border-hover:                  #2f4057;
+
+// logo
+$logo-bg:                                   transparent;
 
 //** Border color for inputs on focus
-$input-border-focus:             #66afe9 !default;
+$input-border:                              #dadada !default;
+$input-border-focus:                        #66afe9 !default;
 
 // Basics of a navbar
-$navbar-default-color:             $white !default;
-$navbar-default-bg:                #203144 !default;
-$navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-color:                      $white !default;
+$navbar-default-bg:                         #203144 !default;
+$navbar-default-border:                     darken($navbar-default-bg, 6.5%) !default;
 
 // Navbar toggle
 $navbar-default-toggle-hover-bg:           #ddd !default;
 $navbar-default-toggle-icon-bar-bg:        #888 !default;
 $navbar-default-toggle-border-color:       #ddd !default;
-$navbar-default-toggle-selected-bg:       #101821 !default;
+$navbar-default-toggle-selected-bg:        #101821 !default;
 
 // Card View
-$card-title-bar:                $fifth-color;
-$card-title-text:               $white;
-$card-bg:                       $white;
-$card-note-section:             #fcf8e3;
-$card-sort-select-bg:           #f0f0f0;
-$card-sort-select-border:       #dddddd;
-$card-sort-select-color:        #666666;
-$card-border:                   #eeeeee;
-$card-th:                       transparent;
+$card-title-bar:                            $fifth-color;
+$card-title-text:                           $white;
+$card-bg:                                   $white;
+$card-note-section:                         #fcf8e3;
+$card-sort-select-bg:                       #f0f0f0;
+$card-sort-select-border:                   #dddddd;
+$card-sort-select-color:                    #666666;
+$card-border:                               #eeeeee;
+$card-th:                                   transparent;
 
 // top Card
-$card-top-border:               lightgray;
+$card-top-border:                           lightgray;
