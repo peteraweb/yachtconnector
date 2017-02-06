@@ -203,7 +203,8 @@ h1#knack-logo.logo-img {
 }
 
 #knack-body .kn-view {
-  padding: 20px 24px;
+  padding: 10px 24px;
+  clear: left;
 }
 
 h1#knack-logo {
@@ -271,7 +272,7 @@ http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost
 
 .kn-rich_text.kn-view.view_68,
 .kn-rich_text.kn-view.view_69 {
-  padding: 10px !important;
+  padding: 0px !important;
 }
 
 .kn-label {
@@ -375,10 +376,6 @@ th.kn-label {
 .cm-filter-title {
   display: inline-block !important;
   padding: 12px 0 6px 60px !important;
-}
-
-#knack-body .kn-view {
-  clear: left;
 }
 
 .kn-list-item {
