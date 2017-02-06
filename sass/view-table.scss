@@ -48,12 +48,12 @@ tr.yc-row-spacer {
 }
 
 tr.yc-row-content {
-    background-color: #fbfbfb;
+    background-color: $table-row-bg;
     box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.5);
 }
 
 .kn-table table {
-  border: 1px solid rgba(0, 0, 0, 0);
+  border: 1px solid $table-border-bg;
   border-collapse: collapse;
   width: 100%;
 }
