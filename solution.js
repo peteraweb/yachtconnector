@@ -179,7 +179,7 @@ $(document).on('knack-page-render.scene_38', function (event, page) {
         itemField: 'field_57'
     });
 
-    $( "ul.chzn-search li:contains('No preference')" ).remove();
+    $( "ul.chzn-results li:contains('No preference')" ).remove();
 
 });
 
