@@ -137,7 +137,8 @@ th.kn-label {
 }
 
 .yc-card-listing-highlight-item {
-    width: 10%
+    width: 9%;
+    float: left;
 }
 
 .yc-card-listing-highlight-label {
@@ -145,9 +146,6 @@ th.kn-label {
 	font-weight: bold;
 }
 
-.yc-card-listing-highlight-item {
-	float: left;
-}
 
 .yc-card-listing-highlight-value {
 	padding: 0 10px 10px 10px;
