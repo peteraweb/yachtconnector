@@ -455,7 +455,12 @@ function listingDetailsView(){
         itemFuelType = $item.find('.field_28 .kn-value').text(),
         itemStaterooms = $item.find('.field_29 .kn-value').text(),
         itemCruisingSpeed = $item.find('.field_31 .kn-value').text(),
-        itemBoatName = $item.find('.field_60 .kn-value').text();
+        itemBoatName = $item.find('.field_60 .kn-value').text(),
+        itemName = $item.find('.field_20 .kn-value').text(),
+        itemPhone = $item.find('.field_36 .kn-value').text(),
+        itemEmail = $item.find('.field_33 .kn-value').text(),
+        itemNote = $item.find('.field_50 .kn-value').text(),
+        itemDateAdded = $item.find('.field_19 .kn-value').text();
 
     $item.find('.view-header').append('<div class="yc-card-listing-highlight-container">' + 
         '<div class="yc-card-listing-highlight-item">'+
@@ -550,6 +555,62 @@ function listingDetailsView(){
         '</div>' +
         '<div class="yc-card-listing-highlight-value">' +
         itemCruisingSpeed +
+        '</div>' +
+        '</div>' +
+        '</div>' +
+        '<div class="yc-card-listing-highlight-container">' + 
+        '<div class="yc-card-listing-highlight-item">'+
+        '<div class="yc-card-listing-highlight-label">' +
+        '<ul class="kn-button-menu kn-grid-1">' +    
+        '<li class="kn-link kn-link-1 kn-link-page">' +
+        '<a href="#" id="ycListingDetails">' +
+        '<span>' +
+        '<i class="fa null"></i>' +
+        'View Details' +
+        '</span>' +
+        '</a>' +
+        '</li>' +
+        '</ul>' +
+        '</div>' +
+        '</div>' +
+        '<div class="yc-card-listing-highlight-item">'+
+        '<div class="yc-card-listing-highlight-label">' +
+        'Name' +
+        '</div>' +
+        '<div class="yc-card-listing-highlight-value">' +
+        itemName +
+        '</div>' +
+        '</div>' +
+        '<div class="yc-card-listing-highlight-item">'+
+        '<div class="yc-card-listing-highlight-label">' +
+        'Phone' +
+        '</div>' +
+        '<div class="yc-card-listing-highlight-value">' +
+        itemPhone +
+        '</div>' +
+        '</div>' +
+        '<div class="yc-card-listing-highlight-item">'+
+        '<div class="yc-card-listing-highlight-label">' +
+        'Email' +
+        '</div>' +
+        '<span class="yc-card-listing-highlight-value">' +
+        itemEmail +
+        '</div>' +
+        '</div>' +
+        '<div class="yc-card-listing-highlight-item">'+
+        '<div class="yc-card-listing-highlight-label">' +
+        'Notes' +
+        '</div>' +
+        '<div class="yc-card-listing-highlight-value">' +
+        itemNotes +
+        '</div>' +
+        '</div>' +
+        '<div class="yc-card-listing-highlight-item">'+
+        '<div class="yc-card-listing-highlight-label">' +
+        'Date Added' +
+        '</div>' +
+        '<div class="yc-card-listing-highlight-value">' +
+        itemDateAdded +
         '</div>' +
         '</div>' +
         '</div>' +

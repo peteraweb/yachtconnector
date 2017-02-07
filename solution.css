@@ -406,8 +406,9 @@ th.kn-label {
 }
 
 .yc-card-listing-highlight-item {
-  width: 9%;
+  width: auto;
   float: left;
+  padding: 0px 9px;
 }
 
 .yc-card-listing-highlight-label {
