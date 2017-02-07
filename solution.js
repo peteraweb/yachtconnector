@@ -561,7 +561,7 @@ function listingDetailsView(){
         '</div>' +
         '</div>' +
         '<div class="clear"></div>' +
-        '<div class="yc-card-listing-highlight-container">' + 
+        '<div class="yc-card-listing-highlight-container yc-card-contact-info">' + 
         '<div class="yc-card-listing-highlight-item yc-card-first-col">'+
         '<div class="yc-card-listing-highlight-label">' +
         '<div class="yc-edit-item">' +
@@ -615,12 +615,12 @@ function listingDetailsView(){
         '</div>' +
         '<div class="clear"></div>');
 
-        $item.find('.kn-details-column').hide();
+        $item.find('.kn-details-column, .yc-card-contact-info').hide();
 
         $(document).on('click','#ycListingDetails',function(e){
             e.preventDefault();
 
-            $item.find('.kn-details-column').toggle();
+            $item.find('.yc-card-contact-info').toggle();
 
         });
 }

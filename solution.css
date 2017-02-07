@@ -470,6 +470,11 @@ th.kn-label {
 .yc-card-listing-highlight-item.yc-card-note-col {
   width: 670px;
 }
+
+.yc-edit-item,
+.yc-delete-item {
+  padding: 10px 40px;
+}
 /* VIEW-TABLE.CSS FILE */
 
 /* theme
