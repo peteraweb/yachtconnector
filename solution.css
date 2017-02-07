@@ -460,6 +460,10 @@ th.kn-label {
 .yc-sort-cards > span {
   padding: 10px 0 0;
 }
+
+.kn-details-link .kn-value {
+  float: right;
+}
 /* VIEW-TABLE.CSS FILE */
 
 /* theme
