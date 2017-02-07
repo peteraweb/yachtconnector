@@ -406,16 +406,13 @@ th.kn-label {
 }
 
 .yc-card-listing-highlight-item {
-  width: 10%;
+  width: 9%;
+  float: left;
 }
 
 .yc-card-listing-highlight-label {
   padding: 10px;
   font-weight: bold;
-}
-
-.yc-card-listing-highlight-item {
-  float: left;
 }
 
 .yc-card-listing-highlight-value {
