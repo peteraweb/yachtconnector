@@ -454,7 +454,8 @@ function listingDetailsView(){
         itemBoatStyle = $item.find('.field_27 .kn-value').text(),
         itemFuelType = $item.find('.field_28 .kn-value').text(),
         itemStaterooms = $item.find('.field_29 .kn-value').text(),
-        itemCruisingSpeed = $item.find('.field_31 .kn-value').text();
+        itemCruisingSpeed = $item.find('.field_31 .kn-value').text(),
+        itemBoatName = $item.find('.field_60 .kn-value').text();
 
     $item.find('.view-header').append('<div class="yc-card-listing-highlight-container">' + 
         '<div class="yc-card-listing-highlight-item">'+
@@ -469,6 +470,14 @@ function listingDetailsView(){
         '</a>' +
         '</li>' +
         '</ul>' +
+        '</div>' +
+        '</div>' +
+        '<div class="yc-card-listing-highlight-item">'+
+        '<div class="yc-card-listing-highlight-label">' +
+        'Boat name' +
+        '</div>' +
+        '<div class="yc-card-listing-highlight-value">' +
+        itemBoatName +
         '</div>' +
         '</div>' +
         '<div class="yc-card-listing-highlight-item">'+
