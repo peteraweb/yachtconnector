@@ -477,6 +477,7 @@ function listingDetailsView(){
         '</ul>' +
         '</div>' +
         '</div>' +
+        '</div>' +
         '<div class="yc-card-listing-highlight-item">'+
         '<div class="yc-card-listing-highlight-label">' +
         'Boat name' +
@@ -571,6 +572,7 @@ function listingDetailsView(){
         '</a>' +
         '</li>' +
         '</ul>' +
+        '</div>' +
         '</div>' +
         '</div>' +
         '<div class="yc-card-listing-highlight-item">'+
