@@ -460,22 +460,23 @@ function listingDetailsView(){
         itemPhone = $item.find('.field_36 .kn-value').text(),
         itemEmail = $item.find('.field_33 .kn-value').text(),
         itemNotes = $item.find('.field_50 .kn-value').text(),
-        itemDateAdded = $item.find('.field_19 .kn-value').text();
+        itemDateAdded = $item.find('.field_19 .kn-value').text(),
+        itemEdit =  $item.find('.kn-link-page:eq(0)').parent().html(),
+        itemDelete =  $item.find('.kn-link-delete').parent().html();
 
     $item.find('.view-header').append('<div class="yc-card-listing-highlight-container">' + 
-        '<div class="yc-card-listing-highlight-item">'+
+        '<div class="yc-card-listing-highlight-item yc-card-first-col">'+
         '<div class="yc-card-listing-highlight-label">' +
         '<ul class="kn-button-menu kn-grid-1">' +    
         '<li class="kn-link kn-link-1 kn-link-page">' +
         '<a href="#" id="ycListingDetails">' +
         '<span>' +
         '<i class="fa null"></i>' +
-        'View Details' +
+        'View Contact Info' +
         '</span>' +
         '</a>' +
         '</li>' +
         '</ul>' +
-        '</div>' +
         '</div>' +
         '</div>' +
         '<div class="yc-card-listing-highlight-item">'+
@@ -498,7 +499,7 @@ function listingDetailsView(){
         '<div class="yc-card-listing-highlight-label">' +
         'Model' +
         '</div>' +
-        '<span class="yc-card-listing-highlight-value">' +
+        '<div class="yc-card-listing-highlight-value">' +
         itemModel +
         '</div>' +
         '</div>' +
@@ -559,19 +560,15 @@ function listingDetailsView(){
         '</div>' +
         '</div>' +
         '</div>' +
+        '<div class="clear"></div>' +
         '<div class="yc-card-listing-highlight-container">' + 
-        '<div class="yc-card-listing-highlight-item">'+
+        '<div class="yc-card-listing-highlight-item yc-card-first-col">'+
         '<div class="yc-card-listing-highlight-label">' +
-        '<ul class="kn-button-menu kn-grid-1">' +    
-        '<li class="kn-link kn-link-1 kn-link-page">' +
-        '<a href="#" id="ycListingDetails">' +
-        '<span>' +
-        '<i class="fa null"></i>' +
-        'View Details' +
-        '</span>' +
-        '</a>' +
-        '</li>' +
-        '</ul>' +
+        '<div class="yc-edit-item">' +
+        itemEdit +
+        '</div>' +
+        '<div class="yc-delete-item">' +
+        itemDelete +
         '</div>' +
         '</div>' +
         '</div>' +
@@ -595,11 +592,11 @@ function listingDetailsView(){
         '<div class="yc-card-listing-highlight-label">' +
         'Email' +
         '</div>' +
-        '<span class="yc-card-listing-highlight-value">' +
+        '<div class="yc-card-listing-highlight-value">' +
         itemEmail +
         '</div>' +
         '</div>' +
-        '<div class="yc-card-listing-highlight-item">'+
+        '<div class="yc-card-listing-highlight-item yc-card-note-col">'+
         '<div class="yc-card-listing-highlight-label">' +
         'Notes' +
         '</div>' +

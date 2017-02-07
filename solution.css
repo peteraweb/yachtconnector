@@ -462,6 +462,14 @@ th.kn-label {
 .kn-details-link .kn-value {
   float: right;
 }
+
+.yc-card-listing-highlight-item.yc-card-first-col {
+  width: 220px;
+}
+
+.yc-card-listing-highlight-item.yc-card-note-col {
+  width: 670px;
+}
 /* VIEW-TABLE.CSS FILE */
 
 /* theme
