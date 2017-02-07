@@ -459,7 +459,7 @@ function listingDetailsView(){
         itemName = $item.find('.field_20 .kn-value').text(),
         itemPhone = $item.find('.field_36 .kn-value').text(),
         itemEmail = $item.find('.field_33 .kn-value').text(),
-        itemNote = $item.find('.field_50 .kn-value').text(),
+        itemNotes = $item.find('.field_50 .kn-value').text(),
         itemDateAdded = $item.find('.field_19 .kn-value').text();
 
     $item.find('.view-header').append('<div class="yc-card-listing-highlight-container">' + 
