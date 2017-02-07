@@ -171,12 +171,18 @@ http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost
 
 h1#knack-logo {
   display: inline-block;
+  background-color: transparent;
+  width: 70%;
 }
 
 h1#knack-logo.logo-img {
   padding: 10px 24px !important;
   line-height: 100%;
   margin: 0;
+}
+
+#knack-logo img {
+  height: 70px;
 }
 
 .kn-current_user {
@@ -205,10 +211,6 @@ h1#knack-logo.logo-img {
 #knack-body .kn-view {
   padding: 10px 24px;
   clear: left;
-}
-
-h1#knack-logo {
-  background-color: transparent;
 }
 /* LOGIN.CSS FILE */
 

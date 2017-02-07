@@ -41,12 +41,18 @@
 
 h1#knack-logo {
 	display: inline-block;
+	background-color: $logo-bg;
+	width: 70%;
 }
 
 h1#knack-logo.logo-img {
 	padding: 10px 24px !important;
 	line-height: 100%;
 	margin: 0;
+}
+
+#knack-logo img {
+	height: 70px;
 }
 
 .kn-current_user {
@@ -74,8 +80,4 @@ h1#knack-logo.logo-img {
 #knack-body .kn-view {
     padding: 10px 24px;
 	clear: left;
-}
-
-h1#knack-logo {
-  background-color: $logo-bg;
 }
