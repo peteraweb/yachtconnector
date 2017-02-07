@@ -178,6 +178,9 @@ $(document).on('knack-page-render.scene_38', function (event, page) {
     formFocusFieldLoad({
         itemField: 'field_57'
     });
+
+    $( "ul.chzn-search li:contains('No preference')" ).remove();
+
 });
 
 // Listing Details with related Buyers View Page: /yachtbroker#listings/listing-details/
