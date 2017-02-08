@@ -465,10 +465,10 @@ function listingDetailsView(){
         itemDelete =  $item.find('.kn-link-delete').parent().html();
 
     $item.find('.view-header').append('<div class="yc-card-listing-highlight-container">' + 
+            /*
         '<div class="yc-card-listing-highlight-item yc-card-first-col">'+
         '<div class="yc-card-listing-highlight-label">' +
         '<h2>Listing Details</h2>' +
-        /*
         '<ul class="kn-button-menu kn-grid-1">' +    
         '<li class="kn-link kn-link-1 kn-link-page">' +
         '<a href="#" id="ycListingDetails">' +
@@ -479,10 +479,10 @@ function listingDetailsView(){
         '</a>' +
         '</li>' +
         '</ul>' +
+
+        '</div>' +
+        '</div>' +
         */
-        '<button id="ycListingDetails">Expand Info</button>' +
-        '</div>' +
-        '</div>' +
         '<div class="yc-card-listing-highlight-item">'+
         '<div class="yc-card-listing-highlight-label">' +
         'Boat name' +
@@ -621,7 +621,7 @@ function listingDetailsView(){
 
         $item.find('.kn-details-column, .yc-card-contact-info').hide();
 
-        $item.find('.view-header h2:eq(0)').remove();
+        $item.find('.view-header h2').after('<button id="ycListingDetails">Expand Info</button>');
 
         $(document).on('click','#ycListingDetails',function(e){
             e.preventDefault();
@@ -721,6 +721,7 @@ function addResultFilters(options) {
         sortCards = $.urlParam($item.itemViewAdd + '_sort'),
         itemHTMLBuyers = '<div class="cm-header-section">' +
             '<label><h2>Potential Buyers</h2></label>' +
+            '<button id="ycExpandFilters">Expand Filters</button>' +
             '<label for="sortCards" class="yc-sort-cards"><span>Sort: </span><select id="sortCards">' +
             '<option value="field_54|asc">Date Added (low to high)</option>' +
             '<option value="field_54|desc">Date Added (high to low)</option>' +
@@ -770,6 +771,7 @@ function addResultFilters(options) {
     '</div>' +
         '</div>';
 
+
     if ($item.itemTypeRecord === 'buyer') {
         $('#' + $item.itemViewShow).replaceWith(itemHTMLBuyers);
     } else {
@@ -780,6 +782,14 @@ function addResultFilters(options) {
 
     sortCardsSelection(sortCards, $item.itemTypeRecord);
 
+    $('.cm-filter-section').hide();
+
+    $(document).on('click','#ycExpandFilters',function(e){
+            e.preventDefault();
+
+            $('.cm-filter-section').toggle();
+
+        });
 
     $(document).on('click', '#filterResults', function () {
 
