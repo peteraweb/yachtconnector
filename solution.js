@@ -480,7 +480,7 @@ function listingDetailsView(){
         '</li>' +
         '</ul>' +
         */
-        '<button>View Contact Info</button>' +
+        '<button id="ycListingDetails">Expand Info</button>' +
         '</div>' +
         '</div>' +
         '<div class="yc-card-listing-highlight-item">'+
@@ -719,18 +719,8 @@ function addResultFilters(options) {
         excludeData = $.urlParam('excludeData') || '',
         excludeData = excludeData.split('||'),
         sortCards = $.urlParam($item.itemViewAdd + '_sort'),
-        itemHTMLBuyers = '<div class="cm-filter-section">' +
-            '<div class="cm-check-boxes">' +
+        itemHTMLBuyers = '<div class="cm-header-section">' +
             '<label><h2>Potential Buyers</h2></label>' +
-            '<label class="cm-filter-title title">Change Search Criteria: </label>' +
-            '<label for="length" title="Uncheck to remove from filtering."><input type="checkbox" id="length" value="Length" checked /> <span>Length</span></label>' +
-            '<label for="year"><input type="checkbox" id="year" value="Year" checked /> <span>Year</span></label>' +
-            '<label for="price"><input type="checkbox" id="price" value="Price" checked /> <span>Price</span></label>' +
-            '<label for="yachtstyle"><input type="checkbox" id="yachtstyle" value="Boat style" checked /> <span>Boat style</span></label>' +
-            '<label for="fueltype"><input type="checkbox" id="fueltype" value="Fuel type" checked /> <span>Fuel type</span></label>' +
-            '<label for="staterooms"><input type="checkbox" id="staterooms" value="Number of staterooms" checked /> <span>Number of staterooms</span></label>' +
-            '<label for="cruisingspeed"><input type="checkbox" id="cruisingspeed" value="Estimated cruising speed" checked /> <span>Estimated cruising speed</span></label>' +
-            '<label for="filterResults"><button type="button" id="filterResults">Apply Changes</button></label>' +
             '<label for="sortCards" class="yc-sort-cards"><span>Sort: </span><select id="sortCards">' +
             '<option value="field_54|asc">Date Added (low to high)</option>' +
             '<option value="field_54|desc">Date Added (high to low)</option>' +
@@ -740,9 +730,21 @@ function addResultFilters(options) {
             '<option value="field_10|desc">Min Length (high to low)</option>' +
             '<option value="field_41|asc">Budget (low to high)</option>' +
             '<option value="field_41|desc">Budget (high to low)</option>' +
-            '</select></label>'
-    '</div>' +
-        '</div>',
+            '</select></label>' +
+            '</div>' +
+            '<div class="cm-filter-section">' +
+            '<div class="cm-check-boxes">' +
+            '<label class="cm-filter-title title">Change Search Criteria: </label>' +
+            '<label for="length" title="Uncheck to remove from filtering."><input type="checkbox" id="length" value="Length" checked /> <span>Length</span></label>' +
+            '<label for="year"><input type="checkbox" id="year" value="Year" checked /> <span>Year</span></label>' +
+            '<label for="price"><input type="checkbox" id="price" value="Price" checked /> <span>Price</span></label>' +
+            '<label for="yachtstyle"><input type="checkbox" id="yachtstyle" value="Boat style" checked /> <span>Boat style</span></label>' +
+            '<label for="fueltype"><input type="checkbox" id="fueltype" value="Fuel type" checked /> <span>Fuel type</span></label>' +
+            '<label for="staterooms"><input type="checkbox" id="staterooms" value="Number of staterooms" checked /> <span>Number of staterooms</span></label>' +
+            '<label for="cruisingspeed"><input type="checkbox" id="cruisingspeed" value="Estimated cruising speed" checked /> <span>Estimated cruising speed</span></label>' +
+            '<label for="filterResults"><button type="button" id="filterResults">Apply Changes</button></label>' +
+            '</div>' +
+            '</div>',
         itemHTMLListings = '<div class="cm-filter-section">' +
         '<div class="cm-check-boxes">' +
         '<label><h2>Potential Listings</h2></label>' +

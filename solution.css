@@ -408,6 +408,7 @@ th.kn-label {
 .yc-card-listing-highlight-item {
   width: auto;
   float: left;
+  width: 9%;
 }
 
 .yc-card-listing-highlight-label {
@@ -473,6 +474,14 @@ th.kn-label {
 .yc-edit-item,
 .yc-delete-item {
   padding: 10px 40px;
+}
+
+#knack-body h2 {
+  margin: 0px 0 8px;
+}
+
+.cm-header-section label {
+  display: inline-block;
 }
 /* VIEW-TABLE.CSS FILE */
 
