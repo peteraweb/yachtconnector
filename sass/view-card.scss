@@ -81,7 +81,7 @@
 
 th.kn-label {
     text-align: right !important;
-    width: 180px !important;
+    /*width: 180px !important;*/
 }
 
 .kn-details th, .kn-list th, .kn-map-list th {
@@ -139,7 +139,6 @@ th.kn-label {
 .yc-card-listing-highlight-item {
     width: auto;
     float: left;
-    padding: 0px 9px;
 }
 
 .yc-card-listing-highlight-label {
@@ -196,7 +195,7 @@ th.kn-label {
 }
 
 .yc-card-listing-highlight-item.yc-card-first-col {
-	width: 220px;
+	/*width: 220px;*/
 }
 
 .yc-card-listing-highlight-item.yc-card-note-col {

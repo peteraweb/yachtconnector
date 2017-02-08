@@ -467,6 +467,8 @@ function listingDetailsView(){
     $item.find('.view-header').append('<div class="yc-card-listing-highlight-container">' + 
         '<div class="yc-card-listing-highlight-item yc-card-first-col">'+
         '<div class="yc-card-listing-highlight-label">' +
+        '<h2>Listing Details</h2>' +
+        /*
         '<ul class="kn-button-menu kn-grid-1">' +    
         '<li class="kn-link kn-link-1 kn-link-page">' +
         '<a href="#" id="ycListingDetails">' +
@@ -477,6 +479,8 @@ function listingDetailsView(){
         '</a>' +
         '</li>' +
         '</ul>' +
+        */
+        '<button>View Contact Info</button>' +
         '</div>' +
         '</div>' +
         '<div class="yc-card-listing-highlight-item">'+
@@ -616,6 +620,8 @@ function listingDetailsView(){
         '<div class="clear"></div>');
 
         $item.find('.kn-details-column, .yc-card-contact-info').hide();
+
+        $item.find('.view-header h2:eq(0)').remove();
 
         $(document).on('click','#ycListingDetails',function(e){
             e.preventDefault();
