@@ -621,12 +621,16 @@ function listingDetailsView(){
 
         $item.find('.kn-details-column, .yc-card-contact-info').hide();
 
-        $item.find('.view-header h2').after('<button id="ycListingDetails">Expand Info</button>');
+        $item.find('.view-header h2').after('<button id="ycListingDetails">Show Contact Info</button>');
 
         $(document).on('click','#ycListingDetails',function(e){
             e.preventDefault();
 
             $item.find('.yc-card-contact-info').toggle();
+
+             $(this).text(function(i, text){
+                return text === "Show Contact Info" ? "Hide Contact Info" : "Show Contact Info";
+            });
 
         });
 }
@@ -721,7 +725,7 @@ function addResultFilters(options) {
         sortCards = $.urlParam($item.itemViewAdd + '_sort'),
         itemHTMLBuyers = '<div class="cm-header-section">' +
             '<label><h2>Potential Buyers</h2></label>' +
-            '<button id="ycExpandFilters">Expand Filters</button>' +
+            '<button id="ycExpandFilters">Show Filters</button>' +
             '<label for="sortCards" class="yc-sort-cards"><span>Sort: </span><select id="sortCards">' +
             '<option value="field_54|asc">Date Added (low to high)</option>' +
             '<option value="field_54|desc">Date Added (high to low)</option>' +
@@ -735,7 +739,7 @@ function addResultFilters(options) {
             '</div>' +
             '<div class="cm-filter-section">' +
             '<div class="cm-check-boxes">' +
-            '<label class="cm-filter-title title">Change Search Criteria: </label>' +
+            '<label class="cm-filter-title title">Change Filter Criteria: </label>' +
             '<label for="length" title="Uncheck to remove from filtering."><input type="checkbox" id="length" value="Length" checked /> <span>Length</span></label>' +
             '<label for="year"><input type="checkbox" id="year" value="Year" checked /> <span>Year</span></label>' +
             '<label for="price"><input type="checkbox" id="price" value="Price" checked /> <span>Price</span></label>' +
@@ -788,6 +792,10 @@ function addResultFilters(options) {
             e.preventDefault();
 
             $('.cm-filter-section').toggle();
+
+            $(this).text(function(i, text){
+                return text === "Show Filters" ? "Hide Filters" : "Show Filters";
+            });
 
         });
 
