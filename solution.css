@@ -483,6 +483,10 @@ th.kn-label {
 .cm-header-section label {
   display: inline-block;
 }
+
+.cm-filter-section {
+  clear: both;
+}
 /* VIEW-TABLE.CSS FILE */
 
 /* theme
