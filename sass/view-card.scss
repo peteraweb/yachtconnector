@@ -139,7 +139,7 @@ th.kn-label {
 .yc-card-listing-highlight-item {
     width: auto;
     float: left;
-    width: 9%;
+    width: 10%;
 }
 
 .yc-card-listing-highlight-label {
@@ -221,4 +221,12 @@ th.kn-label {
 
 .view-header h2 {
 	display: inline-block;
+}
+
+#ycExpandFilters {
+	margin: 0 40px;
+}
+
+#ycListingDetails {
+	margin: 0 60px;
 }
