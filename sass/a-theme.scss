@@ -35,6 +35,18 @@ button  {
     cursor: pointer;
 }
 
+button#ycListingDetails, button#ycExpandFilters  {
+    background-color: transparent  !important;
+    border: 1px solid $seventh-color  !important;
+    color: $sixth-color  !important;
+}
+
+button#ycListingDetails:hover, button#ycExpandFilters:hover {
+    border: 1px solid $btn-primary-border-hover !important;
+    background-color: $white  !important;
+    color: $sixth-color  !important;
+}
+
 .kn-content .kn-button-menu a {
 	color: $btn-primary-color  !important;
 }

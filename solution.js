@@ -343,15 +343,24 @@ function buyerDetailsView(){
         itemMinLength = $item.find('.field_10 .kn-value').text(),
         itemMaxLength = $item.find('.field_11 .kn-value').text(),
         itemOldestYear = $item.find('.field_42 .kn-value').text(),
-        itemBudget = $item.find('.field_42 .kn-value').text()
+        itemBudget = $item.find('.field_41 .kn-value').text()
         itemBoatStyle = $item.find('.field_43 .kn-value').html(),
         itemFuelType = $item.find('.field_17 .kn-value').text(),
         itemMinStaterooms = $item.find('.field_44 .kn-value').text(),
-        itemMinCruisingSpeed = $item.find('.field_46 .kn-value').text();
+        itemMinCruisingSpeed = $item.find('.field_46 .kn-value').text(),
+        itemName = $item.find('.field_8 .kn-value').text(),
+        itemPhone = $item.find('.field_40 .kn-value').text(),
+        itemEmail = $item.find('.field_38 .kn-value').text(),
+        itemAddress = $item.find('.field_37 .kn-value').text(),
+        itemNotes = $item.find('.field_50 .kn-value').text(),
+        itemDateAdded = $item.find('.field_54 .kn-value').text().replace('delete',''),
+        itemEdit =  $item.find('.kn-link-page:eq(0)').parent().html(),
+        itemDelete =  $item.find('.kn-link-delete').parent().html();
 
-    $item.find('.view-header').append('<div class="yc-card-listing-highlight-container">' + 
-        '<div class="yc-card-listing-highlight-item">'+
-        '<div class="yc-card-listing-highlight-label">' +
+    $item.find('.view-header').append('<div class="yc-card-buyer-highlight-container">' + 
+    /*
+        '<div class="yc-card-buyer-highlight-item">'+
+        '<div class="yc-card-buyer-highlight-label">' +
         '<ul class="kn-button-menu kn-grid-1">' +    
         '<li class="kn-link kn-link-1 kn-link-page">' +
         '<a href="#" id="ycListingDetails">' +
@@ -364,81 +373,150 @@ function buyerDetailsView(){
         '</ul>' +
         '</div>' +
         '</div>' +
-        '<div class="yc-card-listing-highlight-item">'+
-        '<div class="yc-card-listing-highlight-label">' +
+        */
+        '<div class="yc-card-buyer-highlight-item">'+
+        '<div class="yc-card-buyer-highlight-label">' +
         'Minimum boat length' +
         '</div>' +
-        '<div class="yc-card-listing-highlight-value">' +
+        '<div class="yc-card-buyer-highlight-value">' +
         itemMinLength +
         '</div>' +
         '</div>' +
-        '<div class="yc-card-listing-highlight-item">'+
-        '<div class="yc-card-listing-highlight-label">' +
+        '<div class="yc-card-buyer-highlight-item">'+
+        '<div class="yc-card-buyer-highlight-label">' +
         'Maximum boat length' +
         '</div>' +
-        '<span class="yc-card-listing-highlight-value">' +
+        '<span class="yc-card-buyer-highlight-value">' +
         itemMaxLength +
         '</div>' +
         '</div>' +
-        '<div class="yc-card-listing-highlight-item">'+
-        '<div class="yc-card-listing-highlight-label">' +
+        '<div class="yc-card-buyer-highlight-item">'+
+        '<div class="yc-card-buyer-highlight-label">' +
         'Oldest model year' +
         '</div>' +
-        '<div class="yc-card-listing-highlight-value">' +
+        '<div class="yc-card-buyer-highlight-value">' +
         itemOldestYear +
         '</div>' +
         '</div>' +
-        '<div class="yc-card-listing-highlight-item">'+
-        '<div class="yc-card-listing-highlight-label">' +
+        '<div class="yc-card-buyer-highlight-item">'+
+        '<div class="yc-card-buyer-highlight-label">' +
         'Budget' +
         '</div>' +
-        '<div class="yc-card-listing-highlight-value">' +
+        '<div class="yc-card-buyer-highlight-value">' +
         itemBudget +
         '</div>' +
         '</div>' +
-        '<div class="yc-card-listing-highlight-item">'+
-        '<div class="yc-card-listing-highlight-label">' +
+        '<div class="yc-card-buyer-highlight-item">'+
+        '<div class="yc-card-buyer-highlight-label">' +
         'Boat Style' +
         '</div>' +
-        '<div class="yc-card-listing-highlight-value">' +
+        '<div class="yc-card-buyer-highlight-value">' +
         itemBoatStyle +
         '</div>' +
         '</div>' +
-        '<div class="yc-card-listing-highlight-item">'+
-        '<div class="yc-card-listing-highlight-label">' +
+        '<div class="yc-card-buyer-highlight-item">'+
+        '<div class="yc-card-buyer-highlight-label">' +
         'Fuel Style' +
         '</div>' +
-        '<div class="yc-card-listing-highlight-value">' +
+        '<div class="yc-card-buyer-highlight-value">' +
         itemFuelType +
         '</div>' +
         '</div>' +
-        '<div class="yc-card-listing-highlight-item">'+
-        '<div class="yc-card-listing-highlight-label">' +
+        '<div class="yc-card-buyer-highlight-item">'+
+        '<div class="yc-card-buyer-highlight-label">' +
         'Minimum staterooms' +
         '</div>' +
-        '<div class="yc-card-listing-highlight-value">' +
+        '<div class="yc-card-buyer-highlight-value">' +
         itemMinStaterooms +
         '</div>' +
         '</div>' +
-        '<div class="yc-card-listing-highlight-item">'+
-        '<div class="yc-card-listing-highlight-label">' +
+        '<div class="yc-card-buyer-highlight-item">'+
+        '<div class="yc-card-buyer-highlight-label">' +
         'Minimum cruising speed' +
         '</div>' +
-        '<div class="yc-card-listing-highlight-value">' +
+        '<div class="yc-card-buyer-highlight-value">' +
         itemMinCruisingSpeed +
+        '</div>' +
+        '</div>' +
+        '</div>' +
+        '<div class="clear"></div>' +
+        '<div class="yc-card-buyer-highlight-container yc-card-contact-info">' + 
+        '<div class="yc-card-buyer-highlight-item yc-card-first-col">'+
+        '<div class="yc-card-buyer-highlight-label">' +
+        '<div class="yc-edit-item">' +
+        itemEdit +
+        '</div>' +
+        '<div class="yc-delete-item">' +
+        itemDelete +
+        '</div>' +
+        '</div>' +
+        '</div>' +
+        '<div class="yc-card-buyer-highlight-item">'+
+        '<div class="yc-card-buyer-highlight-label">' +
+        'Name' +
+        '</div>' +
+        '<div class="yc-card-buyer-highlight-value">' +
+        itemName +
+        '</div>' +
+        '</div>' +
+        '<div class="yc-card-buyer-highlight-item">'+
+        '<div class="yc-card-buyer-highlight-label">' +
+        'Phone' +
+        '</div>' +
+        '<div class="yc-card-buyer-highlight-value">' +
+        itemPhone +
+        '</div>' +
+        '</div>' +
+        '<div class="yc-card-buyer-highlight-item">'+
+        '<div class="yc-card-buyer-highlight-label">' +
+        'Email' +
+        '</div>' +
+        '<div class="yc-card-buyer-highlight-value">' +
+        itemEmail +
+        '</div>' +
+        '</div>' +
+        '<div class="yc-card-buyer-highlight-item">'+
+        '<div class="yc-card-buyer-highlight-label">' +
+        'Email' +
+        '</div>' +
+        '<div class="yc-card-buyer-highlight-value">' +
+        itemAddress +
+        '</div>' +
+        '</div>' +
+        '<div class="yc-card-buyer-highlight-item yc-card-note-col">'+
+        '<div class="yc-card-buyer-highlight-label">' +
+        'Notes' +
+        '</div>' +
+        '<div class="yc-card-buyer-highlight-value">' +
+        itemNotes +
+        '</div>' +
+        '</div>' +
+        '<div class="yc-card-buyer-highlight-item">'+
+        '<div class="yc-card-buyer-highlight-label">' +
+        'Date Added' +
+        '</div>' +
+        '<div class="yc-card-buyer-highlight-value">' +
+        itemDateAdded +
         '</div>' +
         '</div>' +
         '</div>' +
         '<div class="clear"></div>');
 
-        $item.find('.kn-details-column').hide();
+        $item.find('.kn-details-column, .yc-card-contact-info').hide();
+
+        $item.find('.view-header h2').after('<button id="ycListingDetails">Show Buyer\'s Contact Info</button>');
 
         $(document).on('click','#ycListingDetails',function(e){
             e.preventDefault();
 
-            $item.find('.kn-details-column').toggle();
+            $item.find('.yc-card-contact-info').toggle();
+
+            $(this).text(function(i, text){
+                return text === "Show Buyer\'s Contact Info" ? "Hide Buyer\'s Contact Info" : "Show Buyer\'s Contact Info";
+            });
 
         });
+
 }
 
 // Listing Details view
@@ -460,7 +538,7 @@ function listingDetailsView(){
         itemPhone = $item.find('.field_36 .kn-value').text(),
         itemEmail = $item.find('.field_33 .kn-value').text(),
         itemNotes = $item.find('.field_50 .kn-value').text(),
-        itemDateAdded = $item.find('.field_19 .kn-value').text(),
+        itemDateAdded = $item.find('.field_19 .kn-value').text().replace('delete',''),
         itemEdit =  $item.find('.kn-link-page:eq(0)').parent().html(),
         itemDelete =  $item.find('.kn-link-delete').parent().html();
 
@@ -621,7 +699,7 @@ function listingDetailsView(){
 
         $item.find('.kn-details-column, .yc-card-contact-info').hide();
 
-        $item.find('.view-header h2').after('<button id="ycListingDetails">Show Contact Info</button>');
+        $item.find('.view-header h2').after('<button id="ycListingDetails">Show Seller\'s Contact Info</button>');
 
         $(document).on('click','#ycListingDetails',function(e){
             e.preventDefault();
@@ -629,7 +707,7 @@ function listingDetailsView(){
             $item.find('.yc-card-contact-info').toggle();
 
              $(this).text(function(i, text){
-                return text === "Show Contact Info" ? "Hide Contact Info" : "Show Contact Info";
+                return text === "Show Seller\'s Contact Info" ? "Hide Seller\'s Contact Info " : "Show Seller\'s Contact Info";
             });
 
         });
@@ -686,7 +764,7 @@ function addCardHeaderBuyer(options) {
             itemName = $(this).find('.field_8 .kn-value').text() + ' ' + $(this).find('.field_9 .kn-value').text(),
             itemPhone = $(this).find('.field_40 .kn-value').text(),
             itemEmail = $(this).find('.field_38 .kn-value').text(),
-            itemDateAdded = $(this).find('.field_54 .kn-value').text(),
+            itemDateAdded = $(this).find('.field_54 .kn-value').text().replace('delete',''),
             itemNotes = $(this).find('.field_51 .kn-value').text();
 
         $(this).find('.kn-details-group').prepend('<div class="yc-card-title yc-buyer">' + 
@@ -750,30 +828,33 @@ function addResultFilters(options) {
             '<label for="filterResults"><button type="button" id="filterResults">Apply Changes</button></label>' +
             '</div>' +
             '</div>',
-        itemHTMLListings = '<div class="cm-filter-section">' +
-        '<div class="cm-check-boxes">' +
-        '<label><h2>Potential Listings</h2></label>' +
-        '<label class="cm-filter-title title">Change Search Criteria: </label>' +
-        '<label for="length" title="Uncheck to remove from filtering."><input type="checkbox" id="length" value="Min Length" checked /> <span>Min Length</span></label>' +
-        '<label for="year"><input type="checkbox" id="year" value="Oldest model year" checked /> <span>Oldest model year</span></label>' +
-        '<label for="price"><input type="checkbox" id="price" value="Budget" checked /> <span>Budget</span></label>' +
-        '<label for="yachtstyle"><input type="checkbox" id="yachtstyle" value="Boat style" checked /> <span>Boat style</span></label>' +
-        '<label for="fueltype"><input type="checkbox" id="fueltype" value="Fuel type" checked /> <span>Fuel type</span></label>' +
-        '<label for="staterooms"><input type="checkbox" id="staterooms" value="Minimum staterooms" checked /> <span>Minimum staterooms</span></label>' +
-        '<label for="cruisingspeed"><input type="checkbox" id="cruisingspeed" value="Minimum cruising speed" checked /> <span>Minimum cruising speed</span></label>' +
-        '<label for="filterResults"><button type="button" id="filterResults">Apply Changes</button></label>' +
-        '<label for="sortCards" class="yc-sort-cards"><span>Sort: </span><select id="sortCards">' +
-        '<option value="field_19|asc">Date Added (low to high)</option>' +
-        '<option value="field_19|desc">Date Added (high to low)</option>' +
-        '<option value="field_25|asc">Year (low to high)</option>' +
-        '<option value="field_25|desc">Year (high to low)</option>' +
-        '<option value="field_24|asc">Length (low to high)</option>' +
-        '<option value="field_24|desc">Length (high to low)</option>' +
-        '<option value="field_22|asc">Price (low to high)</option>' +
-        '<option value="field_22|desc">Price (high to low)</option>' +
-        '</select></label>'
-    '</div>' +
-        '</div>';
+        itemHTMLListings = '<div class="cm-header-section">' +
+            '<label><h2>Potential Listings</h2></label>' +
+            '<button id="ycExpandFilters">Show Filters</button>' +
+            '<label for="sortCards" class="yc-sort-cards"><span>Sort: </span><select id="sortCards">' +
+            '<option value="field_19|asc">Date Added (low to high)</option>' +
+            '<option value="field_19|desc">Date Added (high to low)</option>' +
+            '<option value="field_25|asc">Year (low to high)</option>' +
+            '<option value="field_25|desc">Year (high to low)</option>' +
+            '<option value="field_24|asc">Length (low to high)</option>' +
+            '<option value="field_24|desc">Length (high to low)</option>' +
+            '<option value="field_22|asc">Price (low to high)</option>' +
+            '<option value="field_22|desc">Price (high to low)</option>' +
+            '</select></label>' +
+            '</div>' +
+            '<div class="cm-filter-section">' +
+            '<div class="cm-check-boxes">' +
+            '<label class="cm-filter-title title">Change Filter Criteria: </label>' +
+            '<label for="length" title="Uncheck to remove from filtering."><input type="checkbox" id="length" value="Min Length" checked /> <span>Min Length</span></label>' +
+            '<label for="year"><input type="checkbox" id="year" value="Oldest model year" checked /> <span>Oldest model year</span></label>' +
+            '<label for="price"><input type="checkbox" id="price" value="Budget" checked /> <span>Budget</span></label>' +
+            '<label for="yachtstyle"><input type="checkbox" id="yachtstyle" value="Boat style" checked /> <span>Boat style</span></label>' +
+            '<label for="fueltype"><input type="checkbox" id="fueltype" value="Fuel type" checked /> <span>Fuel type</span></label>' +
+            '<label for="staterooms"><input type="checkbox" id="staterooms" value="Minimum staterooms" checked /> <span>Minimum staterooms</span></label>' +
+            '<label for="cruisingspeed"><input type="checkbox" id="cruisingspeed" value="Minimum cruising speed" checked /> <span>Minimum cruising speed</span></label>' +
+            '<label for="filterResults"><button type="button" id="filterResults">Apply Changes</button></label>' +
+            '</div>' +
+            '</div>';
 
 
     if ($item.itemTypeRecord === 'buyer') {

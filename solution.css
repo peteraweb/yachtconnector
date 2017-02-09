@@ -9,6 +9,11 @@ http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost
 #knack-body {
   display: none;
 }
+
+i.fa.fa-anchor,
+i.fa.fa-child {
+  display: none;
+}
 /* THEME.CSS FILE */
 
 /* theme
@@ -51,6 +56,20 @@ button {
   background-color: #4E6A8F !important;
   border-radius: 3px;
   cursor: pointer;
+}
+
+button#ycListingDetails,
+button#ycExpandFilters {
+  background-color: transparent  !important;
+  border: 1px solid #203144 !important;
+  color: #5A5D64 !important;
+}
+
+button#ycListingDetails:hover,
+button#ycExpandFilters:hover {
+  border: 1px solid #2f4057 !important;
+  background-color: #ffffff !important;
+  color: #5A5D64 !important;
 }
 
 .kn-content .kn-button-menu a {
@@ -377,7 +396,7 @@ th.kn-label {
 
 .cm-filter-title {
   display: inline-block !important;
-  padding: 12px 0 6px 60px !important;
+  padding: 12px 0 6px 3% !important;
 }
 
 .kn-list-item {
@@ -391,9 +410,10 @@ th.kn-label {
 
 .yc-card-title {
   font-size: 1.4rem;
-  padding: 20px 0;
+  padding: 10px 0;
   text-align: center;
   color: #5A5D64;
+  line-height: 2.5rem;
 }
 
 .yc-card-title.yc-buyer,
@@ -403,21 +423,6 @@ th.kn-label {
 
 .yc-card-title .fa {
   padding: 0 20px 0 0;
-}
-
-.yc-card-listing-highlight-item {
-  width: auto;
-  float: left;
-  width: 10%;
-}
-
-.yc-card-listing-highlight-label {
-  padding: 10px;
-  font-weight: bold;
-}
-
-.yc-card-listing-highlight-value {
-  padding: 0 10px 10px 10px;
 }
 
 .yc-card-note {
@@ -463,12 +468,50 @@ th.kn-label {
   float: right;
 }
 
+.yc-card-listing-highlight-label {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.yc-card-listing-highlight-value {
+  padding: 0 10px 10px 10px;
+}
+
+.yc-card-listing-highlight-item {
+  width: auto;
+  float: left;
+  width: 10%;
+}
+
 .yc-card-listing-highlight-item.yc-card-first-col {
   /*width: 220px;*/
 }
 
 .yc-card-listing-highlight-item.yc-card-note-col {
   width: 50%;
+}
+
+.yc-card-buyer-highlight-label {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.yc-card-buyer-highlight-value {
+  padding: 0 10px 10px 10px;
+}
+
+.yc-card-buyer-highlight-item {
+  width: auto;
+  float: left;
+  width: 12%;
+}
+
+.yc-card-buyer-highlight-item.yc-card-first-col {
+  /*width: 220px;*/
+}
+
+.yc-card-buyer-highlight-item.yc-card-note-col {
+  width: 24%;
 }
 
 .yc-edit-item,
@@ -490,6 +533,7 @@ th.kn-label {
 
 .view-header h2 {
   display: inline-block;
+  font-weight: unset;
 }
 
 #ycExpandFilters {
