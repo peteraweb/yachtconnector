@@ -235,11 +235,11 @@ function buyerDetailsView() {
 
     var
         $item = $('#view_14');
-    itemMinLength = $item.find('.field_10 .kn-value').text(),
+        itemMinLength = $item.find('.field_10 .kn-value').text(),
         itemMaxLength = $item.find('.field_11 .kn-value').text(),
         itemOldestYear = $item.find('.field_42 .kn-value').text(),
         itemBudget = $item.find('.field_41 .kn-value').text()
-    itemBoatStyle = $item.find('.field_43 .kn-value').html(),
+        itemBoatStyle = $item.find('.field_43 .kn-value').html(),
         itemFuelType = $item.find('.field_17 .kn-value').text(),
         itemMinStaterooms = $item.find('.field_44 .kn-value').text(),
         itemMinCruisingSpeed = $item.find('.field_46 .kn-value').text(),
@@ -250,163 +250,149 @@ function buyerDetailsView() {
         itemNotes = $item.find('.field_50 .kn-value').text(),
         itemDateAdded = $item.find('.field_54 .kn-value').text().replace('delete', ''),
         itemEdit = $item.find('.kn-link-page:eq(0)').parent().html(),
+        itemEditURL = $item.find('.kn-link-page').attr('href'),
         itemDelete = $item.find('.kn-link-delete').parent().html();
 
-    $item.find('.view-header').append('<div class="yc-card-buyer-highlight-container">' +
-        /*
-            '<div class="yc-card-buyer-highlight-item">'+
-            '<div class="yc-card-buyer-highlight-label">' +
-            '<ul class="kn-button-menu kn-grid-1">' +    
-            '<li class="kn-link kn-link-1 kn-link-page">' +
-            '<a href="#" id="ycListingDetails">' +
-            '<span>' +
-            '<i class="fa null"></i>' +
-            'View Details' +
-            '</span>' +
-            '</a>' +
-            '</li>' +
-            '</ul>' +
-            '</div>' +
-            '</div>' +
-            */
-        '<div class="yc-card-buyer-highlight-item">' +
-        '<div class="yc-card-buyer-highlight-label">' +
-        'Minimum boat length' +
-        '</div>' +
-        '<div class="yc-card-buyer-highlight-value">' +
-        itemMinLength +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-buyer-highlight-item">' +
-        '<div class="yc-card-buyer-highlight-label">' +
-        'Maximum boat length' +
-        '</div>' +
-        '<span class="yc-card-buyer-highlight-value">' +
-        itemMaxLength +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-buyer-highlight-item">' +
-        '<div class="yc-card-buyer-highlight-label">' +
-        'Oldest model year' +
-        '</div>' +
-        '<div class="yc-card-buyer-highlight-value">' +
-        itemOldestYear +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-buyer-highlight-item">' +
-        '<div class="yc-card-buyer-highlight-label">' +
-        'Budget' +
-        '</div>' +
-        '<div class="yc-card-buyer-highlight-value">' +
-        itemBudget +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-buyer-highlight-item">' +
-        '<div class="yc-card-buyer-highlight-label">' +
-        'Boat style' +
-        '</div>' +
-        '<div class="yc-card-buyer-highlight-value">' +
-        itemBoatStyle +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-buyer-highlight-item">' +
-        '<div class="yc-card-buyer-highlight-label">' +
-        'Fuel type' +
-        '</div>' +
-        '<div class="yc-card-buyer-highlight-value">' +
-        itemFuelType +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-buyer-highlight-item">' +
-        '<div class="yc-card-buyer-highlight-label">' +
-        'Minimum staterooms' +
-        '</div>' +
-        '<div class="yc-card-buyer-highlight-value">' +
-        itemMinStaterooms +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-buyer-highlight-item">' +
-        '<div class="yc-card-buyer-highlight-label">' +
-        'Minimum cruising speed' +
-        '</div>' +
-        '<div class="yc-card-buyer-highlight-value">' +
-        itemMinCruisingSpeed +
-        '</div>' +
-        '</div>' +
-        '</div>' +
-        '<div class="clear"></div>' +
-        '<div class="yc-card-buyer-highlight-container yc-card-contact-info">' +
-        '<div class="yc-card-buyer-highlight-item yc-card-first-col">' +
-        '<div class="yc-card-buyer-highlight-label">' +
-        '<div class="yc-edit-item">' +
-        itemEdit +
-        '</div>' +
-        '<div class="yc-delete-item">' +
-        itemDelete +
-        '</div>' +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-buyer-highlight-item">' +
-        '<div class="yc-card-buyer-highlight-label">' +
-        'Name' +
-        '</div>' +
-        '<div class="yc-card-buyer-highlight-value">' +
-        itemName +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-buyer-highlight-item">' +
-        '<div class="yc-card-buyer-highlight-label">' +
-        'Phone' +
-        '</div>' +
-        '<div class="yc-card-buyer-highlight-value">' +
-        itemPhone +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-buyer-highlight-item">' +
-        '<div class="yc-card-buyer-highlight-label">' +
-        'Email' +
-        '</div>' +
-        '<div class="yc-card-buyer-highlight-value">' +
-        itemEmail +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-buyer-highlight-item">' +
-        '<div class="yc-card-buyer-highlight-label">' +
-        'Email' +
-        '</div>' +
-        '<div class="yc-card-buyer-highlight-value">' +
-        itemAddress +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-buyer-highlight-item yc-card-note-col">' +
-        '<div class="yc-card-buyer-highlight-label">' +
-        'Notes' +
-        '</div>' +
-        '<div class="yc-card-buyer-highlight-value">' +
-        itemNotes +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-buyer-highlight-item">' +
-        '<div class="yc-card-buyer-highlight-label">' +
-        'Date Added' +
-        '</div>' +
-        '<div class="yc-card-buyer-highlight-value">' +
-        itemDateAdded +
-        '</div>' +
-        '</div>' +
-        '</div>' +
-        '<div class="clear"></div>');
+    $item.prepend('<div class="container-flex">'+
+        '    <div class="row">'+
+        '        <div class="col-xs-12">'+
+        '            <h1 class="text-uppercase yc-buyer-details-page-title">'+
+        '                My Buyer\'s Connections'+
+        '            </h1>'+
+        '        </div>'+
+        '    </div>'+
+        '    <div class="row yc-buyer-detail-title-section">'+
+        '        <div class="col-xs-12 col-md-7">'+
+        '            <div class="yc-buyer-detail-title">'+
+        '                <h3>'+
+        '                   DETAILS - '  + itemName +
+        '                </h3>'+
+        '            </div>'+
+        '        </div>'+
+        '        <div class="col-xs-12 col-md-5">'+
+        '            <div class="yc-buyer-title-area-right">'+
+        '                <span>'+
+        '                    <a class="kn-link-page" href="' + itemEditURL + '">'+
+        '                        <span>'+
+        '                            <i class="fa fa-pencil" style="margin-right: 0.4em"></i>'+
+        '                            edit'+
+        '                        </span>'+
+        '                    </a>'+
+        '                </span>'+
+        '                <span class="yc-add-delete">'+
+        '                </span>'+
+        '            </div>'+
+        '            <div class="yc-buyer-detail-title-buttons">'+
+        '                <button id="ycbuyerDetails" class="btn btn-primary btn-md active">Show Buyers\'s Contact Info</button>'+
+        '            </div>'+
+        '        </div>'+
+        '    </div>'+
+        '    <div class="row yc-buyer-detail-info-section yc-buyer-detail-info-hidden">'+
+        '        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-24">'+
+        '            <div class="yc-card-buyer-highlight-value yc-data-edit"></div>'+
+        '            <div class="yc-card-buyer-highlight-value yc-data-delete"></div>'+
+        '        </div>'+
+        '        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-24">'+
+        '            <div class="yc-card-buyer-highlight-label">Name</div>'+
+        '            <div class="yc-card-buyer-highlight-value yc-data-name">' +
+                        itemName +
+        '            </div>'+
+        '        </div>'+
+        '        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-24">'+
+        '            <div class="yc-card-buyer-highlight-label">Phone</div>'+
+        '            <div class="yc-card-buyer-highlight-value yc-data-phone">' +
+                        itemPhone +
+        '            </div>'+
+        '        </div>'+
+        '        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-24">'+
+        '            <div class="yc-card-buyer-highlight-label">Email</div>'+
+        '            <div class="yc-card-buyer-highlight-value yc-data-email">' +
+                        itemEmail +
+        '            </div>'+
+        '        </div>'+
+        '        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-24">'+
+        '            <div class="yc-card-buyer-highlight-label">Address</div>'+
+        '            <div class="yc-card-buyer-highlight-value yc-data-address">' +
+                        itemAddress +
+        '            </div>'+
+        '        </div>'+
+        '        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-24">'+
+        '            <div class="yc-card-buyer-highlight-label">Added</div>'+
+        '            <div class="yc-card-buyer-highlight-value yc-data-date-added">' +
+                        itemDateAdded +
+        '            </div>'+
+        '        </div>'+
+        '        <div class="col-xs-12 col-sm-6 col-md-2">'+
+        '            <div class="yc-card-buyer-highlight-label">Notes</div>'+
+        '            <div class="yc-card-buyer-highlight-value yc-data-notes">' +
+                        itemNotes +
+        '            </div>'+
+        '        </div>'+
+        '    </div>'+
+        '    <div class="row yc-buyer-detail-info-section">'+
+        '        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-24">'+
+        '            <div class="yc-card-buyer-highlight-label">Min Length</div>'+
+        '            <div class="yc-card-buyer-highlight-value yc-data-min-length">' +
+                        itemMinLength +
+        '           </div>'+
+        '        </div>'+
+        '        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-24">'+
+        '            <div class="yc-card-buyer-highlight-label">Max Length</div>'+
+        '            <div class="yc-card-buyer-highlight-value yc-data-max-length">' +
+                        itemMaxLength +
+        '            </div>'+
+        '        </div>'+
+        '        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-24">'+
+        '            <div class="yc-card-buyer-highlight-label">Oldest Year</div>'+
+        '            <div class="yc-card-buyer-highlight-value yc-data-oldest-year">' +
+                        itemOldestYear +
+        '            </div>'+
+        '        </div>'+
+        '        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-24">'+
+        '            <div class="yc-card-buyer-highlight-label">Budget</div>'+
+        '            <div class="yc-card-buyer-highlight-value yc-data-budget">' +
+                        itemBudget +
+        '            </div>'+
+        '        </div>'+
+        '        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-24">'+
+        '            <div class="yc-card-buyer-highlight-label">Style</div>'+
+        '            <div class="yc-card-buyer-highlight-value yc-data-style">' +
+                        itemBoatStyle +
+        '            </div>'+
+        '        </div>'+
+        '        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-24">'+
+        '            <div class="yc-card-buyer-highlight-label">Fuel</div>'+
+        '            <div class="yc-card-buyer-highlight-value yc-data-fuel">' +
+                        itemFuelType +
+        '            </div>'+
+        '        </div>'+
+        '        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-24">'+
+        '            <div class="yc-card-buyer-highlight-label">Staterooms</div>'+
+        '            <div class="yc-card-buyer-highlight-value yc-data-staterooms">' +
+                        itemMinStaterooms +
+        '            </div>'+
+        '        </div>'+
+        '        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-24">'+
+        '            <div class="yc-card-buyer-highlight-label">Min Speed</div>'+
+        '            <div class="yc-card-buyer-highlight-value yc-data-min-speed">' +
+                        itemMinCruisingSpeed +
+        '            </div>'+
+        '        </div>'+
+        '    </div>'+
+        '</div>');
 
-    $item.find('.kn-details-column, .yc-card-contact-info').hide();
+    $item.find('.delete.kn-link-delete').insertAfter($item.find(".yc-add-delete") );
 
-    $item.find('.view-header h2').after('<button id="ycListingDetails">Show Buyer\'s Contact Info</button>');
+    $item.find('.yc-buyer-detail-info-hidden').hide();
 
-    $item.find('.view-header h2').prepend('<i class="fa fa-handshake-o"></i>');
+    //$item.find('.view-header h2').after('<button id="ycListingDetails">Show Buyer\'s Contact Info</button>');
 
-    $(document).on('click', '#ycListingDetails', function (e) {
+    //$item.find('.view-header h2').prepend('<i class="fa fa-handshake-o"></i>');
+
+    $(document).on('click', '#ycbuyerDetails', function (e) {
         e.preventDefault();
 
-        $item.find('.yc-card-contact-info').toggle();
+        $item.find('.yc-buyer-detail-info-hidden').toggle();
 
         $(this).text(function (i, text) {
             return text === "Show Buyer\'s Contact Info" ? "Hide Buyer\'s Contact Info" : "Show Buyer\'s Contact Info";
@@ -438,6 +424,7 @@ function listingDetailsView() {
         itemNotes = $item.find('.field_50 .kn-value').text(),
         itemDateAdded = $item.find('.field_19 .kn-value').text().replace('delete', ''),
         itemEdit = $item.find('.kn-link-page:eq(0)').parent().html(),
+        itemEditURL = $item.find('.kn-link-page').attr('href'),
         itemDelete = $item.find('.kn-link-delete').parent().html(),
         itemHTML = '<div class="container-flex">'+
             '    <div class="row">'+
@@ -458,7 +445,7 @@ function listingDetailsView() {
             '        <div class="col-xs-12 col-md-5">'+
             '            <div class="yc-listing-title-area-right">'+
             '                <span>'+
-            '                    <a class="kn-link-page" href="">'+
+            '                    <a class="kn-link-page" href="' + itemEditURL + '">'+
             '                        <span>'+
             '                            <i class="fa fa-pencil" style="margin-right: 0.4em"></i>'+
             '                            edit'+
@@ -568,163 +555,9 @@ function listingDetailsView() {
     $('.yc-data-notes').append(itemNotes);
 /*
     $item.find('.view-header').append('<div class="yc-card-listing-highlight-container">' +
-        /*
-    '<div class="yc-card-listing-highlight-item yc-card-first-col">'+
-    '<div class="yc-card-listing-highlight-label">' +
-    '<h2>Listing Details</h2>' +
-    '<ul class="kn-button-menu kn-grid-1">' +    
-    '<li class="kn-link kn-link-1 kn-link-page">' +
-    '<a href="#" id="ycListingDetails">' +
-    '<span>' +
-    '<i class="fa null"></i>' +
-    'View Contact Info' +
-    '</span>' +
-    '</a>' +
-    '</li>' +
-    '</ul>' +
-
-    '</div>' +
-    '</div>' +
-    */
-/*
-        '<div class="yc-card-listing-highlight-item">' +
-        '<div class="yc-card-listing-highlight-label">' +
-        'Boat name' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-value">' +
-        itemBoatName +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-item">' +
-        '<div class="yc-card-listing-highlight-label">' +
-        'Make' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-value">' +
-        itemMake +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-item">' +
-        '<div class="yc-card-listing-highlight-label">' +
-        'Model' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-value">' +
-        itemModel +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-item">' +
-        '<div class="yc-card-listing-highlight-label">' +
-        'Length' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-value">' +
-        itemLength +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-item">' +
-        '<div class="yc-card-listing-highlight-label">' +
-        'Year' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-value">' +
-        itemYear +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-item">' +
-        '<div class="yc-card-listing-highlight-label">' +
-        'Price' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-value">' +
-        itemPrice +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-item">' +
-        '<div class="yc-card-listing-highlight-label">' +
-        'Boat Style' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-value">' +
-        itemBoatStyle +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-item">' +
-        '<div class="yc-card-listing-highlight-label">' +
-        'Fuel type' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-value">' +
-        itemFuelType +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-item">' +
-        '<div class="yc-card-listing-highlight-label">' +
-        'Number of staterooms' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-value">' +
-        itemStaterooms +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-item">' +
-        '<div class="yc-card-listing-highlight-label">' +
-        'Estimated cruising speed' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-value">' +
-        itemCruisingSpeed +
-        '</div>' +
-        '</div>' +
-        '</div>' +
-        '<div class="clear"></div>' +
-        '<div class="yc-card-listing-highlight-container yc-card-contact-info">' +
-        '<div class="yc-card-listing-highlight-item yc-card-first-col">' +
-        '<div class="yc-card-listing-highlight-label">' +
-        '<div class="yc-edit-item">' +
-        itemEdit +
-        '</div>' +
-        '<div class="yc-delete-item">' +
-        itemDelete +
-        '</div>' +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-item">' +
-        '<div class="yc-card-listing-highlight-label">' +
-        'Name' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-value">' +
-        itemName +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-item">' +
-        '<div class="yc-card-listing-highlight-label">' +
-        'Phone' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-value">' +
-        itemPhone +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-item">' +
-        '<div class="yc-card-listing-highlight-label">' +
-        'Email' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-value">' +
-        itemEmail +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-item yc-card-note-col">' +
-        '<div class="yc-card-listing-highlight-label">' +
-        'Notes' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-value">' +
-        itemNotes +
-        '</div>' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-item">' +
-        '<div class="yc-card-listing-highlight-label">' +
-        'Date Added' +
-        '</div>' +
-        '<div class="yc-card-listing-highlight-value">' +
-        itemDateAdded +
-        '</div>' +
-        '</div>' +
-        '</div>' +
-        '<div class="clear"></div>');
 */
     //$item.find('.kn-details-column, .yc-listing-detail-info-hidden').hide();
-    $itemCard.find('.yc-listing-detail-info-hidden').hide();
+    $item.find('.yc-listing-detail-info-hidden').hide();
 
     //$item.find('.view-header h2').after('<button id="ycListingDetails">Show Seller\'s Contact Info</button>');
 
@@ -733,7 +566,7 @@ function listingDetailsView() {
     $(document).on('click', '#ycListingDetails', function (e) {
         e.preventDefault();
 
-        $itemCard.find('.yc-listing-detail-info-hidden').toggle();
+        $item.find('.yc-listing-detail-info-hidden').toggle();
 
         $(this).text(function (i, text) {
             return text === "Show Seller\'s Contact Info" ? "Hide Seller\'s Contact Info " : "Show Seller\'s Contact Info";
@@ -761,19 +594,35 @@ function addCardHeaderListing(options) {
                 //itemModel = $(this).find('.field_23 .kn-value').text(),
                 //itemPrice = $(this).find('.field_22 .kn-value').text(),
                 itemNotes = $(this).find('.field_50 .kn-value').text(),
+                itemEditURL = $(this).find('.kn-link-page').attr('href'),
                 itemBoatName = $(this).find('.field_60 .kn-value').text();
 
-            $(this).find('.kn-details-group').prepend('<div class="yc-card-title yc-listing">' +
-                '<i class="fa fa-anchor"></i>' +
-                //itemYear + ' - ' + itemMake + ' - ' + itemModel + ' - ' + itemPrice + 
-                itemBoatName +
+            $(this).find('.kn-details-group').prepend('<div class="yc-card-title yc-listing">'+
+                '    <div class="yc-card-title-area-left">'+
+                '        <i class="fa fa-user"></i>' +
+                         itemBoatName +
+                '    </div>'+
+                '    <div class="yc-card-title-area-right">'+
+                '        <span>'+
+                '            <a class="kn-link-page" href="' + itemEditURL + '">'+
+                '                <span>'+
+                '                    <i class="fa fa-pencil" style="margin-right: 0.4em"></i>'+
+                '                    edit'+
+                '                </span>'+
+                '            </a>'+
+                '        </span>'+
+                '        <span class="yc-add-delete">'+
+                '        </span>'+
+                '    </div>'+
                 '</div>')
                 .append('<div class="yc-card-note">' +
                 '<div class="kn-label"><span>Note</span></div>' +
                 itemNotes +
                 '</div>');
 
-            $(this).find('.field_50').hide();
+                $(this).find('.delete.kn-link-delete').insertAfter($(this).find(".yc-add-delete") );
+                $(this).find('.kn-details-link').hide();
+                $(this).find('.field_50').hide();
 
         });
 
@@ -901,12 +750,12 @@ function addResultFilters(options) {
             '        <div class="col-xs-12 col-md-7 col-lg-8">'+
             '            <div class="form-group yc-check-boxes">'+
             '                <label for="length" title="Uncheck to remove from filtering." class="checkbox-inline"><input type="checkbox" id="length" value="Length" checked /> <span>Length</span></label>'+
-            '                <label for="year" class="checkbox-inline"><input type="checkbox" id="year" value="Year" checked /> <span>Year</span></label>'+
-            '                <label for="price" class="checkbox-inline"><input type="checkbox" id="price" value="Price" checked /> <span>Price</span></label>'+
-            '                <label for="yachtstyle" class="checkbox-inline"><input type="checkbox" id="yachtstyle" value="Boat style" checked /> <span>Boat style</span></label>'+
-            '                <label for="fueltype" class="checkbox-inline"><input type="checkbox" id="fueltype" value="Fuel type" checked /> <span>Fuel type</span></label>'+
-            '                <label for="staterooms" class="checkbox-inline"><input type="checkbox" id="staterooms" value="Number of staterooms" checked /> <span>Number of staterooms</span></label>'+
-            '                <label for="cruisingspeed" class="checkbox-inline"><input type="checkbox" id="cruisingspeed" value="Estimated cruising speed" checked /> <span>Estimated cruising speed</span></label>'+
+            '                <label for="year" title="Uncheck to remove from filtering." class="checkbox-inline"><input type="checkbox" id="year" value="Year" checked /> <span>Year</span></label>'+
+            '                <label for="price" title="Uncheck to remove from filtering." class="checkbox-inline"><input type="checkbox" id="price" value="Price" checked /> <span>Price</span></label>'+
+            '                <label for="yachtstyle" title="Uncheck to remove from filtering." class="checkbox-inline"><input type="checkbox" id="yachtstyle" value="Boat style" checked /> <span>Boat style</span></label>'+
+            '                <label for="fueltype" title="Uncheck to remove from filtering." class="checkbox-inline"><input type="checkbox" id="fueltype" value="Fuel type" checked /> <span>Fuel type</span></label>'+
+            '                <label for="staterooms" title="Uncheck to remove from filtering." class="checkbox-inline"><input type="checkbox" id="staterooms" value="Number of staterooms" checked /> <span>Number of staterooms</span></label>'+
+            '                <label for="cruisingspeed" title="Uncheck to remove from filtering." class="checkbox-inline"><input type="checkbox" id="cruisingspeed" value="Estimated cruising speed" checked /> <span>Estimated cruising speed</span></label>'+
             '            </div>'+
             '        </div>'+
             '        <div class="col-xs-12 col-md-3 col-lg-2">'+
@@ -916,32 +765,66 @@ function addResultFilters(options) {
             '        </div>'+
             '    </div>'+
             '</div>',
-        itemHTMLListings = '<div class="cm-header-section">' +
-            '<label><h2><i class="fa fa-anchor"></i>Potential Listings</h2></label>' +
-            '<button id="ycExpandFilters">Show Filters</button>' +
-            '<label for="sortCards" class="yc-sort-cards"><span>Sort: </span><select id="sortCards">' +
-            '<option value="field_19|asc">Date Added (low to high)</option>' +
-            '<option value="field_19|desc">Date Added (high to low)</option>' +
-            '<option value="field_25|asc">Year (low to high)</option>' +
-            '<option value="field_25|desc">Year (high to low)</option>' +
-            '<option value="field_24|asc">Length (low to high)</option>' +
-            '<option value="field_24|desc">Length (high to low)</option>' +
-            '<option value="field_22|asc">Price (low to high)</option>' +
-            '<option value="field_22|desc">Price (high to low)</option>' +
-            '</select></label>' +
-            '</div>' +
-            '<div class="cm-filter-section">' +
-            '<div class="cm-check-boxes">' +
-            '<label class="cm-filter-title title">Change Filter Criteria: </label>' +
-            '<label for="length" title="Uncheck to remove from filtering."><input type="checkbox" id="length" value="Min Length" checked /> <span>Min Length</span></label>' +
-            '<label for="year"><input type="checkbox" id="year" value="Oldest model year" checked /> <span>Oldest model year</span></label>' +
-            '<label for="price"><input type="checkbox" id="price" value="Budget" checked /> <span>Budget</span></label>' +
-            '<label for="yachtstyle"><input type="checkbox" id="yachtstyle" value="Boat style" checked /> <span>Boat style</span></label>' +
-            '<label for="fueltype"><input type="checkbox" id="fueltype" value="Fuel type" checked /> <span>Fuel type</span></label>' +
-            '<label for="staterooms"><input type="checkbox" id="staterooms" value="Minimum staterooms" checked /> <span>Minimum staterooms</span></label>' +
-            '<label for="cruisingspeed"><input type="checkbox" id="cruisingspeed" value="Minimum cruising speed" checked /> <span>Minimum cruising speed</span></label>' +
-            '<label for="filterResults"><button type="button" id="filterResults">Apply Changes</button></label>' +
-            '</div>' +
+        itemHTMLListings = '<div class="container-flex yc-listings-container">'+
+            '    <div class="row yc-listings-detail-title-section">'+
+            '        <div class="col-xs-12 col-md-5">'+
+            '            <div class="yc-listings-detail-title">'+
+            '                <h3>'+
+            '                    Listings'+
+            '                </h3>'+
+            '            </div>'+
+            '        </div>'+
+            '        <div class="col-xs-12 col-md-7">'+
+            '            <div class="yc-listings-detail-title-buttons form-inline">'+
+            '                <button id="ycExpandFilters" class="btn btn-primary btn-md active">Show Filters</button>'+
+            '                <select id="sortCards" class="form-control">'+
+            '                    <option value="field_54|asc">Date Added (low to high)</option>'+
+            '                    <option value="field_54|desc">Date Added (high to low)</option>'+
+            '                    <option value="field_42|asc">Oldest model year (low to high)</option>'+
+            '                    <option value="field_42|desc">Oldest model year (high to low)</option>'+
+            '                    <option value="field_10|asc">Min Length (low to high)</option>'+
+            '                    <option value="field_10|desc">Min Length (high to low)</option>'+
+            '                    <option value="field_41|asc">Budget (low to high)</option>'+
+            '                    <option value="field_41|desc">Budget (high to low)</option>'+
+            '                </select>'+
+            '            </div>'+
+            '        </div>'+
+            '    </div>'+
+            '    <div class="row yc-row-tab">'+
+            '        <div class="yc-listings-detail-tab yc-tab-active">'+
+            '            <h4>'+
+            '                <i class="fa fa-user" aria-hidden="true"></i> My Connections'+
+            '            </h4>'+
+            '        </div>'+
+            '        <div class="yc-listings-detail-tab">'+
+            '            <h4>'+
+            '                <i class="fa fa-handshake-o"></i> Co-Op Connections'+
+            '            </h4>'+
+            '        </div>'+
+            '    </div>'+
+            '    <div class="row yc-filter-section">'+
+            '        <div class="col-xs-12 col-md-2">'+
+            '            <div class="form-group">'+
+            '                <label class="cm-filter-title title">Change Filter Criteria: </label>'+
+            '            </div>'+
+            '        </div>'+
+            '        <div class="col-xs-12 col-md-7 col-lg-8">'+
+            '            <div class="form-group yc-check-boxes">'+
+            '                <label for="length"  title="Uncheck to remove from filtering." class="checkbox-inline"><input type="checkbox" id="length" value="Min Length" checked /> <span>Min Length</span></label>'+
+            '                <label for="year" title="Uncheck to remove from filtering." class="checkbox-inline"><input type="checkbox" id="year" value="Oldest model year" checked /> <span>Oldest model year</span></label>'+
+            '                <label for="price" title="Uncheck to remove from filtering." class="checkbox-inline"><input type="checkbox" id="price" value="Budget" checked /> <span>Budget</span></label>'+
+            '                <label for="yachtstyle" title="Uncheck to remove from filtering." class="checkbox-inline"><input type="checkbox" id="yachtstyle" value="Boat style" checked /> <span>Boat style</span></label>'+
+            '                <label for="fueltype" title="Uncheck to remove from filtering." class="checkbox-inline"><input type="checkbox" id="fueltype" value="Fuel type" checked /> <span>Fuel type</span></label>'+
+            '                <label for="staterooms" title="Uncheck to remove from filtering." class="checkbox-inline"><input type="checkbox" id="staterooms" value="Minimum staterooms" checked /> <span>Minimum staterooms</span></label>'+
+            '                <label for="cruisingspeed" title="Uncheck to remove from filtering." class="checkbox-inline"><input type="checkbox" id="cruisingspeed" value="Minimum cruising speed" checked /> <span>Minimum cruising speed</span></label>'+
+            '            </div>'+
+            '        </div>'+
+            '        <div class="col-xs-12 col-md-3 col-lg-2">'+
+            '            <div class="form-group">'+
+            '                <label for="filterResults"><button type="button" id="filterResults" class="btn btn-primary btn-lg active">Apply Changes</button></label>'+
+            '            </div>'+
+            '        </div>'+
+            '    </div>'+
             '</div>';
 
 

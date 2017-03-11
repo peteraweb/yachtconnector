@@ -89,15 +89,26 @@ h2 .fa.fa-handshake-o {
 
 }
 
-.yc-add-listing-form {
+.yc-add-listing-form,
+.yc-add-buyer-form {
     border-left: 2px solid #ffffff;
 	border-right: 2px solid #ffffff;
     border-bottom: 2px solid #ffffff;
     padding: 20px;
+    background-color: #ffffff;
+}
+
+.yc-buyer-add-page-title {
+	color: #fff !important;
 }
 
 .yc-listing-add-title-section {
     background-color: #ffc61e;
+    padding: 10px 0;
+}
+
+.yc-buyer-add-title-section {
+    background-color: #2d7dd2;
     padding: 10px 0;
 }
 
@@ -121,4 +132,18 @@ h2 .fa.fa-handshake-o {
 	background-color: #009FFD;
 	border-color: #009FFD;
 	color: #fff;
+}
+
+.kn-input input[type="email"], .kn-input input[type="password"], .kn-input input[type="text"], .kn-input input[type="url"], .kn-input select, .kn-input textarea, .kn-map-search input[name="map_origin"], .kn-map-search select, .kn-search-filter input[type="text"], .kn-search-filter select {
+	background-color: #f2f2f2;
+}
+
+.chzn-container .chzn-drop {
+	background: #f2f2f2;
+}
+
+.chzn-container-single .chzn-single,
+.chzn-container-multi .chzn-choices {
+	background-color: #f2f2f2;
+	background-image: linear-gradient(to bottom,#f2f2f2 0,#f2f2f2 50%);
 }

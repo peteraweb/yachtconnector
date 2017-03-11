@@ -137,6 +137,11 @@ $(document).on('knack-view-render.view_46', function (event, page) {
 
     changeSubmitButtonOnStatusChange();
 
+    addListingFormPage({
+        itemView: '.view_46',
+        itemTitle: 'Listing Specifications'
+    });
+
 });
 $(document).on('knack-view-render.view_48', function (event, page) {
 
@@ -144,11 +149,21 @@ $(document).on('knack-view-render.view_48', function (event, page) {
         itemField: 'field_22'
     });
 
+    addListingFormPage({
+        itemView: '.view_48',
+        itemTitle: 'Listing Specifications'
+    });
+
 });
 $(document).on('knack-view-render.view_82', function (event, page) {
 
     addCommasToNumber({
         itemField: 'field_22'
+    });
+
+    addListingFormPage({
+        itemView: '.view_82',
+        itemTitle: 'Listing Specifications'
     });
 
 });
@@ -165,6 +180,9 @@ $(document).on('knack-view-render.view_89', function (event, page) {
         itemField: 'field_22'
     });
 
-    addListingFormPage();
+    addListingFormPage({
+        itemView: '.view_89',
+        itemTitle: 'Listing Specifications'
+    });
 
 });

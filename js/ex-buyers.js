@@ -17,10 +17,18 @@ $(document).on('knack-view-render.view_12', function (event, page) {
         itemView: 'view_12'
     });
 
-    addButtonToItemsList({
-        itemAppendTo: 'table-keyword-search',
-        itemName: 'View Inactive Buyers',
-        itemURL: 'https://yachtconnector.knack.com/yachtbroker#buyers/buyers-inactive/'
+    $('.small.kn-button.gray')
+        .removeClass()
+        .addClass('btn btn-primary btn-lg active inverse-button');
+    $('.table-keyword-search').addClass('form-inline');
+    $('.table-keyword-search input')
+        .addClass('form-control')
+        .removeAttr('style')
+        .attr('style','width: 200px;');
+
+    addTitleToIcons({
+        itemTextEdit: 'Edit Buyer',
+        itemTextDelete: 'Delete Buyer'
     });
 
 });
@@ -39,10 +47,18 @@ $(document).on('knack-view-render.view_83', function (event, page) {
         itemView: 'view_83'
     });
 
-    addButtonToItemsList({
-        itemAppendTo: 'table-keyword-search',
-        itemName: 'View Active Buyers',
-        itemURL: 'https://yachtconnector.knack.com/yachtbroker#buyers/'
+    $('.small.kn-button.gray')
+        .removeClass()
+        .addClass('btn btn-primary btn-lg active inverse-button');
+    $('.table-keyword-search').addClass('form-inline');
+    $('.table-keyword-search input')
+        .addClass('form-control')
+        .removeAttr('style')
+        .attr('style','width: 200px;');
+
+    addTitleToIcons({
+        itemTextEdit: 'Edit Buyer',
+        itemTextDelete: 'Delete Buyer'
     });
 
 });
@@ -137,6 +153,11 @@ $(document).on('knack-view-render.view_55', function (event, page) {
         itemField: 'field_41'
     });
 
+    addBuyerFormPage({
+        itemView: '.view_55',
+        itemTitle: 'Buyer Specifications'
+    });
+
 });
 $(document).on('knack-view-render.view_78', function (event, page) {
     choiceFieldSelectionLimit({
@@ -157,6 +178,11 @@ $(document).on('knack-view-render.view_30', function (event, page) {
 
     addCommasToNumber({
         itemField: 'field_41'
+    });
+
+    addBuyerFormPage({
+        itemView: '.view_30',
+        itemTitle: 'Buyer Specifications'
     });
 
 });
@@ -182,6 +208,11 @@ $(document).on('knack-view-render.view_88', function (event, page) {
         itemField: 'field_41'
     });
 
+    addBuyerFormPage({
+        itemView: '.view_88',
+        itemTitle: 'Buyer Specifications'
+    });
+
 });
 
 $(document).on('knack-view-render.view_81', function (event, page) {
@@ -192,6 +223,11 @@ $(document).on('knack-view-render.view_81', function (event, page) {
 
     addCommasToNumber({
         itemField: 'field_41'
+    });
+
+    addBuyerFormPage({
+        itemView: '.view_81',
+        itemTitle: 'Buyer Specifications'
     });
 
 });

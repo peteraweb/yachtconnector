@@ -115,6 +115,26 @@ td.field_40 > span > a,
 	display: block;
 }
 
+.view_12 table.kn-table-table th {
+	background-color: #2d7dd2;
+}
+
+.view_12 .kn-table-table th {
+	border: 0;
+	border-left: 1px solid #2d7dd2;
+	border-right: 1px solid #2d7dd2;
+}
+
+.view_12 .kn-table-table td  {
+	border: 0;
+	border-left: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
+}
+
+.view_12 .kn-sort {
+	color: #fff !important;
+}
+
 .view_33 table.kn-table-table th {
 	background-color: #ffc61e;
 }

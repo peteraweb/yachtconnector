@@ -8935,15 +8935,26 @@ h2 .fa.fa-handshake-o {
   }
 }
 
-.yc-add-listing-form {
+.yc-add-listing-form,
+.yc-add-buyer-form {
   border-left: 2px solid #ffffff;
   border-right: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
   padding: 20px;
+  background-color: #ffffff;
+}
+
+.yc-buyer-add-page-title {
+  color: #fff !important;
 }
 
 .yc-listing-add-title-section {
   background-color: #ffc61e;
+  padding: 10px 0;
+}
+
+.yc-buyer-add-title-section {
+  background-color: #2d7dd2;
   padding: 10px 0;
 }
 
@@ -8968,6 +8979,29 @@ h2 .fa.fa-handshake-o {
   border-color: #009FFD;
   color: #fff;
 }
+
+.kn-input input[type="email"],
+.kn-input input[type="password"],
+.kn-input input[type="text"],
+.kn-input input[type="url"],
+.kn-input select,
+.kn-input textarea,
+.kn-map-search input[name="map_origin"],
+.kn-map-search select,
+.kn-search-filter input[type="text"],
+.kn-search-filter select {
+  background-color: #f2f2f2;
+}
+
+.chzn-container .chzn-drop {
+  background: #f2f2f2;
+}
+
+.chzn-container-single .chzn-single,
+.chzn-container-multi .chzn-choices {
+  background-color: #f2f2f2;
+  background-image: linear-gradient(to bottom, #f2f2f2 0, #f2f2f2 50%);
+}
 /* FORM-EDIT-ADD.CSS FILE */
 
 /* theme
@@ -8987,6 +9021,8 @@ http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost
 
 #view_35 .view-header,
 #view_35 .kn-details-column,
+#view_14 .view-header,
+#view_14 .kn-details-column,
 #view_67,
 #view_64,
 #view_79,
@@ -9021,6 +9057,11 @@ http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost
 #knack-body h5,
 #knack-body h6 {
   color: #074376;
+}
+
+.h1,
+h1 {
+  font-size: 30px;
 }
 /* HOME.CSS FILE */
 
@@ -9196,6 +9237,17 @@ h1#knack-logo.logo-img,
   padding: 10px 0;
 }
 
+.yc-buyer-detail-title-section {
+  background-color: #2d7dd2;
+  padding: 10px 0;
+}
+
+.yc-buyer-detail-title h3,
+.yc-buyer-title-area-right .kn-link-page,
+.yc-buyer-title-area-right .kn-link-delete {
+  color: #fff !important;
+}
+
 .yc-listing-detail-title h3,
 .yc-buyers-detail-title h3 {
   padding-top: 10px;
@@ -9205,16 +9257,20 @@ h1#knack-logo.logo-img,
   color: #ffffff !important;
 }
 
+.yc-buyer-detail-info-section,
 .yc-listing-detail-info-section {
   background-color: #ffffff;
 }
 
-.yc-listing-detail-info-hidden {
+.yc-listing-detail-info-hidden,
+.yc-buyer-detail-info-hidden {
   display: none;
 }
 
 .yc-listing-detail-title-buttons,
-.yc-buyers-detail-title-buttons {
+.yc-buyers-detail-title-buttons,
+.yc-listings-detail-title-buttons,
+.yc-buyer-detail-title-buttons {
   float: right;
 }
 
@@ -9223,11 +9279,18 @@ h1#knack-logo.logo-img,
   background-color: #2d7dd2;
 }
 
-.yc-buyers-detail-title-section {
+.yc-card-title.yc-listing,
+.yc-listings-detail-title-section {
+  background-color: #ffc61e;
+}
+
+.yc-buyers-detail-title-section,
+.yc-listings-detail-title-section {
   padding: 10px 0;
 }
 
-.yc-buyers-detail-tab {
+.yc-buyers-detail-tab,
+.yc-listings-detail-tab {
   width: 260px;
   float: left;
   padding: 10px 30px;
@@ -9237,11 +9300,13 @@ h1#knack-logo.logo-img,
   background-color: #ffffff;
 }
 
-.yc-buyers-detail-tab.yc-tab-active {
+.yc-buyers-detail-tab.yc-tab-active,
+.yc-listings-detail-tab.yc-tab-active {
   background-color: #f2f2f2;
 }
 
-.yc-buyers-detail-tab:hover {
+.yc-buyers-detail-tab:hover,
+.yc-listings-detail-tab:hover {
   background-color: #f2f2f2;
 }
 
@@ -9251,7 +9316,8 @@ h1#knack-logo.logo-img,
   border-right: 2px solid #ffffff;
 }
 
-.yc-buyers-container {
+.yc-buyers-container,
+.yc-listings-container {
   padding-top: 30px;
 }
 
@@ -9265,12 +9331,14 @@ h1#knack-logo.logo-img,
   border-right: 2px solid #ffffff;
 }
 
-.yc-buyers-section {
+.yc-buyers-section,
+.yc-listings-section {
   border-left: 2px solid #ffffff;
   border-right: 2px solid #ffffff;
 }
 
-.yc-buyers-section-bottom {
+.yc-buyers-section-bottom,
+.yc-listings-section-bottom {
   border-left: 2px solid #ffffff;
   border-right: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
@@ -9298,20 +9366,21 @@ h1#knack-logo.logo-img,
   padding-left: 22px;
 }
 
-.yc-card-title.yc-buyer {
+.yc-card-title.yc-buyer,
+.yc-card-title.yc-listing {
   height: 50px;
 }
 
-.yc-card-title .kn-link-page {
-  color: #ffffff !important;
-  font-size: .7em;
-  padding-right: 20px;
-}
-
+.yc-card-title .kn-link-page,
 .yc-card-title .delete.kn-link-delete {
   color: #ffffff !important;
   font-size: .7em;
   padding-right: 20px;
+}
+
+.yc-card-title.yc-listing .kn-link-page,
+.yc-card-title.yc-listing .delete.kn-link-delete {
+  color: #074376 !important;
 }
 
 .yc-card-title .yc-card-title-area-right .fa {
@@ -9319,13 +9388,15 @@ h1#knack-logo.logo-img,
   font-size: 1em;
 }
 
-.yc-listing-title-area-right {
+.yc-listing-title-area-right,
+.yc-buyer-title-area-right {
   float: right;
   padding: 10px 10px 10px 20px;
   font-size: 1.1em;
 }
 
-.yc-listing-title-area-right .kn-link-page {
+.yc-listing-title-area-right .kn-link-page,
+.yc-buyer-title-area-right .kn-link-page {
   padding-right: 10px;
 }
 /* LOGIN.CSS FILE */
@@ -9937,13 +10008,6 @@ http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fi.huffpost
   white-space: nowrap;
 }
 
-/*.kn-details.kn-view.view_35,*/
-
-.kn-details.kn-view.view_14 {
-  border-top: 4px solid lightgray;
-  border-bottom: 2px solid lightgray;
-}
-
 .kn-details th {
   background-color: transparent !important;
 }
@@ -9992,6 +10056,10 @@ th.kn-label {
   text-align: center;
   color: #ffffff;
   line-height: 2.5rem;
+}
+
+.yc-card-title.yc-listing {
+  color: #074376;
 }
 
 .yc-card-title .fa {
@@ -10253,6 +10321,26 @@ td.field_40 > span > a,
   white-space: nowrap;
   margin-bottom: -10px;
   display: block;
+}
+
+.view_12 table.kn-table-table th {
+  background-color: #2d7dd2;
+}
+
+.view_12 .kn-table-table th {
+  border: 0;
+  border-left: 1px solid #2d7dd2;
+  border-right: 1px solid #2d7dd2;
+}
+
+.view_12 .kn-table-table td {
+  border: 0;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+}
+
+.view_12 .kn-sort {
+  color: #fff !important;
 }
 
 .view_33 table.kn-table-table th {

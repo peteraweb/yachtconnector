@@ -63,11 +63,6 @@
     white-space: nowrap;
 }
 
-/*.kn-details.kn-view.view_35,*/
-.kn-details.kn-view.view_14 {
-	border-top: 4px solid $card-top-border;
-	border-bottom: 2px solid $card-top-border;
-}
 
 .kn-details th {
     background-color: $card-th !important; 
@@ -116,6 +111,10 @@ th.kn-label {
     text-align: center;
     color: $white;
     line-height: 2.5rem;
+}
+
+.yc-card-title.yc-listing {
+    color: #074376;
 }
 
 .yc-card-title .fa {

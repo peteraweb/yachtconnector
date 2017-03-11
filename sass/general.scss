@@ -12,6 +12,8 @@
 
 #view_35 .view-header,
 #view_35 .kn-details-column,
+#view_14 .view-header,
+#view_14 .kn-details-column,
 #view_67,
 #view_64,
 #view_79,
@@ -40,4 +42,8 @@
 
 #knack-body h1, #knack-body h2, #knack-body h3, #knack-body h4, #knack-body h5, #knack-body h6 {
 	color: #074376;
+}
+
+.h1, h1 {
+	font-size: 30px;
 }

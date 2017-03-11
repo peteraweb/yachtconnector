@@ -1,0 +1,62 @@
+<div class="container-flex yc-listings-container">
+    <div class="row yc-listings-detail-title-section">
+        <div class="col-xs-12 col-md-5">
+            <div class="yc-listings-detail-title">
+                <h3>
+                    Listings
+                </h3>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-7">
+            <div class="yc-listings-detail-title-buttons form-inline">
+                <button id="ycExpandFilters" class="btn btn-primary btn-lg active">Show Filters</button>
+                <select id="sortCards" class="form-control">
+                    <option value="field_54|asc">Date Added (low to high)</option>
+                    <option value="field_54|desc">Date Added (high to low)</option>
+                    <option value="field_42|asc">Oldest model year (low to high)</option>
+                    <option value="field_42|desc">Oldest model year (high to low)</option>
+                    <option value="field_10|asc">Min Length (low to high)</option>
+                    <option value="field_10|desc">Min Length (high to low)</option>
+                    <option value="field_41|asc">Budget (low to high)</option>
+                    <option value="field_41|desc">Budget (high to low)</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row yc-row-tab">
+        <div class="yc-listings-detail-tab yc-tab-active">
+            <h4>
+                <i class="fa fa-user" aria-hidden="true"></i> My Connections
+            </h4>
+        </div>
+        <div class="yc-listings-detail-tab">
+            <h4>
+                <i class="fa fa-handshake-o"></i> Co-Op Connections
+            </h4>
+        </div>
+    </div>
+    <div class="row yc-filter-section">
+        <div class="col-xs-12 col-md-2">
+            <div class="form-group">
+                <label class="cm-filter-title title">Change Filter Criteria: </label>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-7 col-lg-8">
+            <div class="form-group yc-check-boxes">
+                <label for="length" title="Uncheck to remove from filtering."><input type="checkbox" id="length" value="Min Length" checked /> <span>Min Length</span></label>
+                <label for="year"><input type="checkbox" id="year" value="Oldest model year" checked /> <span>Oldest model year</span></label>
+                <label for="price"><input type="checkbox" id="price" value="Budget" checked /> <span>Budget</span></label>
+                <label for="yachtstyle"><input type="checkbox" id="yachtstyle" value="Boat style" checked /> <span>Boat style</span></label>
+                <label for="fueltype"><input type="checkbox" id="fueltype" value="Fuel type" checked /> <span>Fuel type</span></label>
+                <label for="staterooms"><input type="checkbox" id="staterooms" value="Minimum staterooms" checked /> <span>Minimum staterooms</span></label>
+                <label for="cruisingspeed"><input type="checkbox" id="cruisingspeed" value="Minimum cruising speed" checked /> <span>Minimum cruising speed</span></label>
+                <label for="filterResults"><button type="button" id="filterResults">Apply Changes</button></label>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-3 col-lg-2">
+            <div class="form-group">
+                <label for="filterResults"><button type="button" id="filterResults" class="btn btn-primary btn-lg active">Apply Changes</button></label>
+            </div>
+        </div>
+    </div>
+</div>
