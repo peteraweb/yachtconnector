@@ -6,5 +6,18 @@
 }
 
 i.fa.fa-anchor, i.fa.fa-child {
-  display: none;
+  /*display: none;*/
+}
+
+i.fa.fa-anchor {
+  font-weight: bold;
+  font-size: .9em;
+}
+
+h2 i.fa.fa-anchor,
+h2 .fa-user
+{
+  position: relative;
+  bottom: 2px;
+  display:none;
 }

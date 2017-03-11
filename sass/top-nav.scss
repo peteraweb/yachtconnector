@@ -4,6 +4,17 @@
 #kn-app-menu ul {
 	background-color: $navbar-default-bg !important;
 	border-color: $navbar-default-border !important;
+	text-transform: uppercase;
+	overflow: hidden;
+	border-top: 1px solid;
+	border-bottom: 1px transparent;
+	margin: 0;
+	padding: 0;
+}
+
+.kn-content #kn-app-menu .active a, .kn-content #kn-app-menu a:hover {
+	background-color: #e9ebef !important;
+	color: $gray-base !important;
 }
 
 .kn-content #kn-app-menu a {
@@ -11,11 +22,7 @@
 }
 
 #kn-app-menu {
-	width: 296px;
+	/*width: 296px;*/
 	display: block;
-    padding-left: 24px;
-}
-
-.kn-content #kn-app-menu .active a, .kn-content #kn-app-menu a:hover {
-	background-color: $navbar-default-toggle-selected-bg !important;
+    /*padding-left: 24px;*/
 }

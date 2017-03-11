@@ -1,0 +1,43 @@
+/* FORM-EDIT-ADD.CSS FILE */
+@import "_variables";
+
+#knack-body .kn-view {
+	padding: 2px 24px;
+	clear: both;
+}
+
+.kn-entries-summary {
+    display: none;
+}
+
+#view_35 .view-header,
+#view_35 .kn-details-column,
+#view_67,
+#view_64,
+#view_79,
+#view_77,
+#view_60,
+#view_63,
+#view_105,
+#view_58,
+#view_125,
+#view_127 {
+    display: none !important;
+}
+
+#knack-body a.btn-primary {
+	color: $white;
+}
+
+#knack-body h2 {
+	font-size: 30px;
+	margin: 6px 0 8px;
+}
+#knack-body h3 {
+	font-size: 24px;
+	margin: 0;
+}
+
+#knack-body h1, #knack-body h2, #knack-body h3, #knack-body h4, #knack-body h5, #knack-body h6 {
+	color: #074376;
+}

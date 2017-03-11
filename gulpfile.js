@@ -11,13 +11,17 @@ gulp.task('default', function () {
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var concat = require('gulp-concat');
 var concatCss = require('gulp-concat-css');
 
 gulp.task('default', function() {
     gulp.src('sass/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(concatCss("solution.css"))
-        .pipe(gulp.dest(''))
+        .pipe(gulp.dest(''));
+    gulp.src('js/*.js')
+    .pipe(concat('solution.js'))
+    .pipe(gulp.dest(''));
 });
 
 //Watch task

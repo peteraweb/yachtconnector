@@ -4,9 +4,18 @@
 
 /*.kn-details.kn-view.view_14,
 .kn-details.kn-view.view_35,*/
+.kn-form.kn-view.view_30,
+.kn-form.kn-view.view_88,
 .kn-table.kn-view.view_12,
+.kn-form.kn-view.view_46,
+.kn-form.kn-view.view_48,
+.kn-form.kn-view.view_89,
+.kn-form.kn-view.view_82,
+.kn-form.kn-view.view_55,
+.kn-form.kn-view.view_81,
 .kn-table.kn-view.view_33 {
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    /*box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);*/
+    padding-bottom: 30px !important;
 }
 
 .kn-table.kn-view.view_12,
@@ -32,6 +41,7 @@
     padding-top: 1px !important;
 }
 
+.kn-rich_text.kn-view,
 .kn-rich_text.kn-view.view_49,
 .kn-rich_text.kn-view.view_54 {
     padding-bottom: 1px !important;
@@ -49,7 +59,7 @@ tr.yc-row-spacer {
 
 tr.yc-row-content {
     background-color: $table-row-bg;
-    box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.5);
+    /*box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.5);*/
 }
 
 .kn-table table {
@@ -58,11 +68,17 @@ tr.yc-row-content {
   width: 100%;
 }
 
+h1,
 #view_49 h1,
-#view_54 h1
+#view_54 h1,
+#view_85 h1
 {
 	display: inline-block;
 	padding: 0 0 20px 0;
+}
+
+.kn-modal-bg h1 {
+	display: block;
 }
 
 .yc-add-new-buyer-button,
@@ -71,4 +87,58 @@ tr.yc-row-content {
 	display: inline-block;
 	position: relative;
 	top: 10px;
+}
+
+.table-keyword-search .yc-add-new-buyer-button {
+    top: -10px;
+}
+
+.yc-button-inactive-items {
+	float: right;
+}
+
+#view_12 .kn-link-page span,
+#view_33 .kn-link-page span
+{
+    /*white-space: nowrap;*/
+}
+
+.kn-table table th {
+	white-space: normal;
+}
+
+td.field_36 > span > a, 
+td.field_40 > span > a,
+.field_43 > span > span {
+	white-space: nowrap;
+	margin-bottom: -10px;
+	display: block;
+}
+
+.view_33 table.kn-table-table th {
+	background-color: #ffc61e;
+}
+
+.view_33 .kn-table-table th {
+	border: 0;
+	border-left: 1px solid #ffc61e;
+	border-right: 1px solid #ffc61e;
+}
+
+.view_33 .kn-table-table td  {
+	border: 0;
+	border-left: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
+}
+
+.kn-table tr:nth-child(2n) {
+	background-color: #ffffff;
+}
+
+.kn-table table th {
+	line-height: 1.3em;
+}
+
+.table-fixed-label {
+	white-space: nowrap;
 }

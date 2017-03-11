@@ -3,7 +3,7 @@
 @import "_variables";
 
 .kn-rich_text.kn-view.view_68,
-.kn-rich_text.kn-view.view_69 {
+.kn-rich_text.kn-view.view_699 {
   padding: 0px !important;
 }
 
@@ -63,7 +63,7 @@
     white-space: nowrap;
 }
 
-.kn-details.kn-view.view_35,
+/*.kn-details.kn-view.view_35,*/
 .kn-details.kn-view.view_14 {
 	border-top: 4px solid $card-top-border;
 	border-bottom: 2px solid $card-top-border;
@@ -89,14 +89,6 @@ th.kn-label {
 
 }
 
-#view_64,
-#view_79,
-#view_77,
-#view_60,
-#view_58 {
-    display: none;
-}
-
 /*
 .cm-filter-section {
   border-bottom: 1px solid #d3d3d3;
@@ -110,8 +102,8 @@ th.kn-label {
 }
 
 .kn-list-item {
-    border-bottom: 1px solid $card-border;
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    /*border-bottom: 1px solid $card-border;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);*/
     clear: both;
     margin: 20px;
     padding: 0px;
@@ -119,32 +111,26 @@ th.kn-label {
 }
 
 .yc-card-title {
-    font-size: 1.4rem;
+    font-size: 1.8em;
     padding: 10px 0;
     text-align: center;
-    color: $card-title-text;
+    color: $white;
     line-height: 2.5rem;
 }
-
-.yc-card-title.yc-buyer,
-.yc-card-title.yc-listing
-{
-    background-color: $card-title-bar;
-}
-
 
 .yc-card-title .fa {
     padding: 0 20px 0 0;
 }
 
-
-
-
 .yc-card-note {
 	padding: 10px 20px;
-	background-color: $card-note-section;
+	background-color: $white;
 	display: inline-block;
 	width: -moz-available;
+}
+
+.yc-card-note .kn-label {
+	font-weight: bold;
 }
 
 .kn-input-section_break {
@@ -176,7 +162,8 @@ th.kn-label {
 }
 
 .yc-sort-cards > span {
-  padding: 10px 0 0;
+    position: relative;
+    top: 6px;
 }
 
 .kn-details-link .kn-value {
@@ -190,7 +177,7 @@ th.kn-label {
 
 
 .yc-card-listing-highlight-value {
-	padding: 0 10px 10px 10px;
+	padding: 10px;
 }
 
 .yc-card-listing-highlight-item {
@@ -237,6 +224,7 @@ th.kn-label {
 
 #knack-body h2 {
 	margin: 0px 0 8px;
+    border: 2px solid lightgray;
 }
 
 .cm-header-section label {
@@ -256,6 +244,21 @@ th.kn-label {
 	margin: 0 40px;
 }
 
-#ycListingDetails {
-	margin: 0 60px;
+#view_66 .kn-list-content .kn-list-item-container {
+	float: left;
+	width: 50%;
+}
+
+.kn-list-two-column .kn-list-item-container {
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .kn-list-two-column .kn-list-item-container {
+        float: left;
+        width: 50%;
+    }
+
 }

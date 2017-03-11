@@ -35,9 +35,10 @@ button  {
     cursor: pointer;
 }
 
+/*
 button#ycListingDetails, button#ycExpandFilters  {
     background-color: transparent  !important;
-    border: 1px solid $seventh-color  !important;
+    border: 1px solid  $seventh-color !important; //$seventh-color
     color: $sixth-color  !important;
 }
 
@@ -46,6 +47,7 @@ button#ycListingDetails:hover, button#ycExpandFilters:hover {
     background-color: $white  !important;
     color: $sixth-color  !important;
 }
+*/
 
 .kn-content .kn-button-menu a {
 	color: $btn-primary-color  !important;
@@ -74,3 +76,4 @@ button#ycListingDetails:hover, button#ycExpandFilters:hover {
 	background-color: $btn-primary-bg  !important;
     color: $btn-primary-color  !important;
 }
+

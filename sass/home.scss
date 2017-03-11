@@ -4,7 +4,7 @@
 
 .yc-home-view-links {
 	clear: both;
-	padding: 40px;
+	padding: 6px 40px 0px 40px;
     text-align: center;
 }
 
@@ -28,11 +28,11 @@
 }
 
 .kn-link.kn-link-1.yc-view-buyers {
-	padding: 20px 50px;
+	padding: 0px 30px 20px;
 }
 
 .kn-link.kn-link-2.yc-view-listings {
-	padding: 20px 70px;
+	padding: 0px 30px 20px;
 }
 
 .yc-home-view-links a {
@@ -59,14 +59,27 @@ h1#knack-logo.logo-img {
 	display: inline-block;
 	float: right;
 	text-align: center;
-	padding: 20px 40px 0 0;
+	padding: 10px 40px 0 0;
 }
 .knaccount_settings {
 	display: block;
 }
 
 .kn-view.kn-info.clearfix {
-    display: none;
+	/* display: none; */
+	position: absolute;
+	float: right;
+	right: 0px;
+	top: 0px;
+	width: 400px;
+	background-color: transparent !important;
+	border-bottom: 1px solid transparent !important;
+}
+
+.kn-current-user-intro,
+.kn-crumbtrail
+{
+	display: none !important;
 }
 
 #view_73 {
@@ -77,7 +90,81 @@ h1#knack-logo.logo-img {
     margin: 0px !important;
 }
 
-#knack-body .kn-view {
-    padding: 10px 24px;
+.kn-view.kn-back-link {
+	display: none;
+}
+
+.view_71,
+.view_72,
+#register_all_users
+ {
+	padding: 60px 0 0 0 !important;
 	clear: left;
+	margin: 0 auto !important;
+	width: 400px;
+	position: relative;
+}
+
+.kn-account_settings {
+	display: block;
+	padding: 4px 0px;
+}
+
+.kn-current_user .first {
+	padding-right: 6px;
+}
+
+.kn-view,
+h1#knack-logo.logo-img,
+#kn-app-menu ul
+ {
+	padding-left: 100px !important;
+	padding-right: 100px !important;
+}
+
+.kn-grid-list.kn-grid-6 {
+	height: 40px;
+}
+
+.yc-view-buyers span,
+.yc-view-listings span {
+	font-size: 1rem;
+}
+
+.number-counter {
+	font-size: 5rem;
+	padding: 20px;
+}
+
+.yc-home-dashboard-group {
+	background-color: #ffffff;
+	padding: 0 0 30px 0;
+}
+
+.yc-home-dashboard-buyers-title {
+	background-color: #2d7dd2;
+	padding: 20px 0;
+}
+
+.yc-home-dashboard-listings-title {
+	background-color: #ffc61e;
+	padding: 20px 0;
+}
+
+.yc-home-dashboard-listings-title h3,
+.yc-home-dashboard-buyers-title h3
+{
+	color: #ffffff;
+}
+
+.yc-home-dashboard-group h4 {
+	white-space: nowrap;
+}
+
+.yc-home-dashboard-buyers-title h3 {
+	color: #ffffff !important;
+}
+
+.yc-home-dashboard-container {
+	text-align: center;
 }

@@ -34,3 +34,91 @@ input[type=text]:focus, textarea:focus {
     border-color: $input-border-focus;
     box-shadow: 0 0 10px $input-border-focus;
 }
+
+.search-choice {
+	width: 228px;
+}
+
+.kn-input textarea {
+	height: 120px;
+	width: 100%;
+}
+
+.kn-form-group .kn-form-col {
+	width: 30%;
+}
+
+.search-field input {
+    width: 200px !important;
+}
+
+h2 .fa.fa-handshake-o {
+	margin-right: 0.4em;
+}
+
+.kn-input {
+	margin-bottom: 8px !important;
+}
+
+#field_38 {
+    margin-bottom: 0px !important;
+}
+
+.yc-instructions {
+	padding-left: 10px;
+	font-style: italic;
+}
+
+.kn-form-group .kn-form-col {
+    width: 100%;
+}
+
+.kn-content .kn-form li.kn-form-col-2 {
+	margin-left: 0px;
+}
+
+@media only screen and (min-width: 992px) {
+
+    .kn-form-group .kn-form-col {
+        width: 30%;
+    }
+
+    .kn-content .kn-form li.kn-form-col-2 {
+        margin-left: 25px;
+    }
+
+}
+
+.yc-add-listing-form {
+    border-left: 2px solid #ffffff;
+	border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding: 20px;
+}
+
+.yc-listing-add-title-section {
+    background-color: #ffc61e;
+    padding: 10px 0;
+}
+
+.kn-view input[type="submit"] {
+	color: #000 !important;
+    background-color: #e9ebef !important;
+    border-color: #171d40 !important;
+}
+
+.kn-view input[type="submit"]:hover {
+    color: #fff !important;
+	background-color: #171d40 !important;
+	border-color: #204d74 !important;
+}
+
+.kn-form .input-error {
+	background-color: #009FFD;
+}
+
+.kn-message.error {
+	background-color: #009FFD;
+	border-color: #009FFD;
+	color: #fff;
+}
